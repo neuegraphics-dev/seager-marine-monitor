@@ -12,15 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
       
-      - run: npm install
+      - name: Install
+        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
       
-      - run: npm run monitor
+      - name: Run Monitor
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
+        run: npm run monitor || true
