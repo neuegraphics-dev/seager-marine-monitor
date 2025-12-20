@@ -19,7 +19,11 @@ jobs:
           node-version: '18'
       
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install --legacy-peer-deps
+      
+      - name: Create data directory
+        run: mkdir -p data
       
       - name: Run competitor monitor
         env:
@@ -28,3 +32,11 @@ jobs:
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
         run: npm run monitor
+      
+      - name: Commit results
+        run: |
+          git config user.name "Seager Monitor Bot"
+          git config user.email "monitor@seagermarine.local"
+          git add -A
+          git commit -m "Monitor scan: $(date)" || true
+          git push || true
