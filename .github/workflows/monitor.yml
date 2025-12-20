@@ -12,18 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Use Node.js
-        run: |
-          curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-          sudo apt-get install -y nodejs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
       
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - run: npm install --no-save
       
-      - name: Run competitor monitor
+      - run: npm run monitor
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
-        run: npm run monitor
