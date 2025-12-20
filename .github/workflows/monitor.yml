@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
       
-      - run: npm install --no-save
+      - run: npm install
       
       - run: npm run monitor
         env:
