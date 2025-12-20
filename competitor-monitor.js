@@ -194,6 +194,7 @@ async function sendEmailNotification(changes, competitor) {
   const sendgridApiKey = process.env.SENDGRID_API_KEY;
   const fromEmail = process.env.SENDGRID_FROM_EMAIL;
   const toEmail = process.env.SENDGRID_TO_EMAIL;
+  const toEmail2 = process.env.SENDGRID_TO_EMAIL_2;
 
   if (!sendgridApiKey || !fromEmail || !toEmail) {
     console.warn('SendGrid credentials not configured, skipping email notification');
@@ -269,7 +270,7 @@ async function sendEmailNotification(changes, competitor) {
   const emailPayload = {
     personalizations: [
       {
-        to: [{ email: toEmail }],
+        to: [{ email: toEmail }, { email: toEmail2 }],
         subject: `Seager Marine Monitor - ${competitor} Update`
       }
     ],
