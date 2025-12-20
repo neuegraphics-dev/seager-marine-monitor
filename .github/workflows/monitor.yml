@@ -1,0 +1,48 @@
+name: Seager Monitor - Automated Competitor Tracking (Email)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run competitor monitor
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
+          SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
+          SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
+        run: npm run monitor
+      
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monitor-results-${{ github.run_id }}
+          path: data/
+          retention-days: 90
+      
+      - name: Commit and push data
+        if: always()
+        run: |
+          git config user.name "Seager Monitor Bot"
+          git config user.email "monitor@seagermarine.local"
+          git add data/
+          git commit -m "Monitor scan: $(date)" || true
+          git push || true
