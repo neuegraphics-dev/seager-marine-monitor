@@ -1,4 +1,4 @@
-name: Seager Monitor - Automated Competitor Tracking (Email)
+name: Seager Monitor
 
 on:
   schedule:
@@ -10,33 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
       
-      - name: Install dependencies
-        run: |
-          npm install --legacy-peer-deps
+      - run: npm install --no-save
       
-      - name: Create data directory
-        run: mkdir -p data
+      - run: mkdir -p data
       
-      - name: Run competitor monitor
+      - run: npm run monitor
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
-        run: npm run monitor
-      
-      - name: Commit results
-        run: |
-          git config user.name "Seager Monitor Bot"
-          git config user.email "monitor@seagermarine.local"
-          git add -A
-          git commit -m "Monitor scan: $(date)" || true
-          git push || true
