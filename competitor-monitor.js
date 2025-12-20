@@ -202,14 +202,31 @@ async function sendEmailNotification(changes, competitor) {
   }
 
   // Build email content
-  let emailContent = `<h2>⚓ ${competitor} - Inventory Update</h2>`;
-  emailContent += `<p><strong>Update Time:</strong> ${new Date().toLocaleString()}</p>`;
+let emailContent = `
+<html>
+<head>
+<style>
+body { font-family: Arial, sans-serif; color: #333; }
+h2 { color: #1f5f8f; border-bottom: 2px solid #1f5f8f; padding-bottom: 10px; }
+h3 { color: #1f5f8f; margin-top: 20px; }
+.update-time { color: #666; font-size: 14px; margin: 10px 0 20px 0; }
+ul { list-style: none; padding-left: 20px; }
+li { margin: 8px 0; padding: 8px; background: #f5f5f5; border-left: 4px solid #1f5f8f; }
+.price { color: #27ae60; font-weight: bold; }
+.price-change { color: #e74c3c; }
+hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+.footer { color: #999; font-size: 12px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<h2>⚓ ${competitor} - Inventory Update</h2>
+<p class="update-time"><strong>Update Time:</strong> ${new Date().toLocaleString()}</p>
+`;
 
   if (changes.added.length > 0) {
-    emailContent += `<h3>✨ Added (${changes.added.length})</h3>`;
-    emailContent += '<ul>';
+    emailContent += `<h3>✨ Added (${changes.added.length})</h3><ul>`;
     changes.added.slice(0, 5).forEach(b => {
-      emailContent += `<li>${b.title} - ${b.price}</li>`;
+      emailContent += `<li><strong>${b.title}</strong><br/><span class="price">${b.price}</span></li>`;
     });
     if (changes.added.length > 5) {
       emailContent += `<li>... and ${changes.added.length - 5} more</li>`;
@@ -218,8 +235,7 @@ async function sendEmailNotification(changes, competitor) {
   }
 
   if (changes.removed.length > 0) {
-    emailContent += `<h3>❌ Removed (${changes.removed.length})</h3>`;
-    emailContent += '<ul>';
+    emailContent += `<h3>❌ Removed (${changes.removed.length})</h3><ul>`;
     changes.removed.slice(0, 5).forEach(b => {
       emailContent += `<li>${b.title}</li>`;
     });
@@ -230,8 +246,7 @@ async function sendEmailNotification(changes, competitor) {
   }
 
   if (changes.sold.length > 0) {
-    emailContent += `<h3>🔴 Sold (${changes.sold.length})</h3>`;
-    emailContent += '<ul>';
+    emailContent += `<h3>🔴 Sold (${changes.sold.length})</h3><ul>`;
     changes.sold.slice(0, 5).forEach(b => {
       emailContent += `<li>${b.title}</li>`;
     });
@@ -242,8 +257,7 @@ async function sendEmailNotification(changes, competitor) {
   }
 
   if (changes.pending.length > 0) {
-    emailContent += `<h3>⏳ Pending (${changes.pending.length})</h3>`;
-    emailContent += '<ul>';
+    emailContent += `<h3>⏳ Pending (${changes.pending.length})</h3><ul>`;
     changes.pending.slice(0, 5).forEach(b => {
       emailContent += `<li>${b.title}</li>`;
     });
@@ -254,10 +268,9 @@ async function sendEmailNotification(changes, competitor) {
   }
 
   if (changes.priceChanges.length > 0) {
-    emailContent += `<h3>💰 Price Changes (${changes.priceChanges.length})</h3>`;
-    emailContent += '<ul>';
+    emailContent += `<h3>💰 Price Changes (${changes.priceChanges.length})</h3><ul>`;
     changes.priceChanges.slice(0, 5).forEach(c => {
-      emailContent += `<li>${c.boat.title}: ${c.oldPrice} → ${c.newPrice}</li>`;
+      emailContent += `<li><strong>${c.boat.title}</strong><br/><span class="price-change">${c.oldPrice} → ${c.newPrice}</span></li>`;
     });
     if (changes.priceChanges.length > 5) {
       emailContent += `<li>... and ${changes.priceChanges.length - 5} more</li>`;
@@ -265,7 +278,7 @@ async function sendEmailNotification(changes, competitor) {
     emailContent += '</ul>';
   }
 
-  emailContent += '<hr><p><small>This is an automated notification from Seager Marine Competitor Monitor</small></p>';
+  emailContent += `<hr/><p class="footer">This is an automated notification from Seager Marine Competitor Monitor</p></body></html>`;;
 
   const emailPayload = {
     personalizations: [
