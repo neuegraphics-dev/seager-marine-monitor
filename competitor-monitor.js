@@ -7,7 +7,7 @@ require('dotenv').config();
 // Mark's Leisure Time Marine configuration
 const MARKS_CONFIG = {
   name: "Mark's Leisure Time Marine",
-  url: 'https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&make=avalon&make=lund&make=nautique&pg=1&sz=50',
+  url: 'https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&pg=1&sz=50',
   selectors: {
     parentContainer: 'div.v7list-results',
     boatCard: 'article.v7list-vehicle',
