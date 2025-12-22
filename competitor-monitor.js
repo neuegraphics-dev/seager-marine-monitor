@@ -1,380 +1,159 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const fs = require('fs');
-const path = require('path');
+require('dotenv').config();
 
-// Competitor websites to monitor
-const COMPETITORS = [
-  { name: 'Marks Leisure Time Marine', url: 'marksleisuretimemarine.com' },
-  { name: 'Smith Boys', url: 'smithboys.com' },
-  { name: 'Sutters Marina', url: 'suttersmarina.com' },
-  { name: 'FLX Marine', url: 'flxmarine.com' },
-  { name: 'Canandaigua Boat Works', url: 'canandaguiaboatworks.com' },
-  { name: 'Morgan Marine', url: 'morganmarine.net' },
-  { name: 'Anchor Marine', url: 'anchormarine.com' },
-  { name: 'Keuka Watersports', url: 'keukawatersports.com' },
-  { name: 'Oneida Lake Marina', url: 'oneidalakemarina.com' },
-  { name: 'Bryce Marine', url: 'brycemarine.com' },
-  { name: 'McMillan Marine', url: 'mcmillanmarine.com' },
-  { name: 'German Brothers', url: 'germanbrothers.com' }
-];
-
-const DATA_DIR = path.join(__dirname, 'data');
-const DB_FILE = path.join(DATA_DIR, 'inventory.json');
-
-// Ensure data directory exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
-
-// Initialize database
-function initDatabase() {
-  if (!fs.existsSync(DB_FILE)) {
-    fs.writeFileSync(DB_FILE, JSON.stringify({
-      lastUpdated: null,
-      competitors: {}
-    }, null, 2));
+// Mark's Leisure Time Marine configuration
+const MARKS_CONFIG = {
+  name: "Mark's Leisure Time Marine",
+  url: 'https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&pg=1',
+  selectors: {
+    parentContainer: 'div.v7list-results',
+    boatCard: 'article.v7list-vehicle',
+    title: 'h3.v7list-vehicle__heading',
+    link: 'a.vehicle-heading__link',
+    price: 'span.vehicle-price.vehicle-price--current',
+    savings: 'span.vehicle-price.vehicle-price--savings',
+    status: 'span.vehicle-image__overlay-content span.vehicle-image__overlay-text'
   }
-}
-
-function getDatabase() {
-  return JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
-}
-
-function saveDatabase(data) {
-  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
-}
-
-// Parse boat listings from HTML
-async function parseBoats(html, competitorName) {
-  const $ = cheerio.load(html);
-  const boats = [];
-
-  // Generic selectors for common boat listing patterns
-  const boatSelectors = [
-    '.boat-listing',
-    '.inventory-item',
-    '.boat-item',
-    '[class*="boat"]',
-    '[data-boat]',
-    '.product-item',
-    '.listing'
-  ];
-
-  for (const selector of boatSelectors) {
-    $(selector).each((i, el) => {
-      const title = $(el).find('h2, h3, .title, [class*="title"]').text().trim();
-      const price = $(el).find('.price, [class*="price"]').text().trim();
-      const status = $(el).find('.status, [class*="status"]').text().toLowerCase();
-      const link = $(el).find('a').attr('href') || '';
-
-      if (title) {
-        boats.push({
-          id: `${competitorName}-${title}-${price}`.replace(/[^a-zA-Z0-9]/g, ''),
-          title,
-          price,
-          status: status || 'available',
-          link: link.startsWith('http') ? link : `https://${COMPETITORS.find(c => c.name === competitorName).url}${link}`,
-          soldStatus: determineSoldStatus(title, status, html),
-          fetchedAt: new Date().toISOString()
-        });
-      }
-    });
-
-    if (boats.length > 0) break;
-  }
-
-  return boats;
-}
-
-// Determine if boat is sold, pending, or available
-function determineSoldStatus(title, status, html) {
-  const text = `${title} ${status}`.toLowerCase();
-  
-  if (text.includes('sold')) return 'sold';
-  if (text.includes('pending') || text.includes('under contract')) return 'pending';
-  if (text.includes('available') || text.includes('for sale')) return 'available';
-  
-  return 'available';
-}
-
-// Fetch and parse a competitor website
-async function fetchCompetitor(competitor) {
-  try {
-    const response = await axios.get(`https://${competitor.url}`, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      },
-      timeout: 10000
-    });
-
-    const boats = await parseBoats(response.data, competitor.name);
-    
-    return {
-      success: true,
-      competitor: competitor.name,
-      url: competitor.url,
-      boats,
-      fetchedAt: new Date().toISOString()
-    };
-  } catch (error) {
-    return {
-      success: false,
-      competitor: competitor.name,
-      url: competitor.url,
-      error: error.message,
-      fetchedAt: new Date().toISOString()
-    };
-  }
-}
-
-// Compare old and new data to detect changes
-function detectChanges(oldData, newData) {
-  const changes = {
-    added: [],
-    removed: [],
-    sold: [],
-    pending: [],
-    priceChanges: []
-  };
-
-  if (!oldData) {
-    changes.added = newData;
-    return changes;
-  }
-
-  const oldMap = new Map(oldData.map(b => [b.id, b]));
-  const newMap = new Map(newData.map(b => [b.id, b]));
-
-  // Find added boats
-  newData.forEach(boat => {
-    if (!oldMap.has(boat.id)) {
-      changes.added.push(boat);
-    }
-  });
-
-  // Find removed boats
-  oldData.forEach(boat => {
-    if (!newMap.has(boat.id)) {
-      changes.removed.push(boat);
-    }
-  });
-
-  // Find status changes and price changes
-  newData.forEach(newBoat => {
-    const oldBoat = oldMap.get(newBoat.id);
-    if (oldBoat) {
-      if (oldBoat.soldStatus !== newBoat.soldStatus) {
-        if (newBoat.soldStatus === 'sold') {
-          changes.sold.push(newBoat);
-        } else if (newBoat.soldStatus === 'pending') {
-          changes.pending.push(newBoat);
-        }
-      }
-
-      // Compare prices (remove currency symbols for comparison)
-      const oldPrice = oldBoat.price.replace(/[^\d.]/g, '');
-      const newPrice = newBoat.price.replace(/[^\d.]/g, '');
-      
-      if (oldPrice && newPrice && oldPrice !== newPrice) {
-        changes.priceChanges.push({
-          boat: newBoat,
-          oldPrice: oldBoat.price,
-          newPrice: newBoat.price
-        });
-      }
-    }
-  });
-
-  return changes;
-}
-
-// Send notification via SendGrid email
-async function sendEmailNotification(changes, competitor) {
-  const sendgridApiKey = process.env.SENDGRID_API_KEY;
-  const fromEmail = process.env.SENDGRID_FROM_EMAIL;
-  const toEmail = process.env.SENDGRID_TO_EMAIL;
-  const toEmail2 = process.env.SENDGRID_TO_EMAIL_2;
-
-  if (!sendgridApiKey || !fromEmail || !toEmail) {
-    console.warn('SendGrid credentials not configured, skipping email notification');
-    return;
-  }
-
-  // Build email content
-let emailContent = `
-<html>
-<head>
-<style>
-body { font-family: Arial, sans-serif; color: #333; }
-h2 { color: #1f5f8f; border-bottom: 2px solid #1f5f8f; padding-bottom: 10px; }
-h3 { color: #1f5f8f; margin-top: 20px; }
-.update-time { color: #666; font-size: 14px; margin: 10px 0 20px 0; }
-ul { list-style: none; padding-left: 20px; }
-li { margin: 8px 0; padding: 8px; background: #f5f5f5; border-left: 4px solid #1f5f8f; }
-.price { color: #27ae60; font-weight: bold; }
-.price-change { color: #e74c3c; }
-hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
-.footer { color: #999; font-size: 12px; margin-top: 30px; }
-</style>
-</head>
-<body>
-<h2>⚓ ${competitor} - Inventory Update</h2>
-<p class="update-time"><strong>Update Time:</strong> ${new Date().toLocaleString()}</p>
-`;
-
-  if (changes.added.length > 0) {
-    emailContent += `<h3>✨ Added (${changes.added.length})</h3><ul>`;
-    changes.added.slice(0, 5).forEach(b => {
-      emailContent += `<li><strong>${b.title}</strong><br/><span class="price">${b.price}</span></li>`;
-    });
-    if (changes.added.length > 5) {
-      emailContent += `<li>... and ${changes.added.length - 5} more</li>`;
-    }
-    emailContent += '</ul>';
-  }
-
-  if (changes.removed.length > 0) {
-    emailContent += `<h3>❌ Removed (${changes.removed.length})</h3><ul>`;
-    changes.removed.slice(0, 5).forEach(b => {
-      emailContent += `<li>${b.title}</li>`;
-    });
-    if (changes.removed.length > 5) {
-      emailContent += `<li>... and ${changes.removed.length - 5} more</li>`;
-    }
-    emailContent += '</ul>';
-  }
-
-  if (changes.sold.length > 0) {
-    emailContent += `<h3>🔴 Sold (${changes.sold.length})</h3><ul>`;
-    changes.sold.slice(0, 5).forEach(b => {
-      emailContent += `<li>${b.title}</li>`;
-    });
-    if (changes.sold.length > 5) {
-      emailContent += `<li>... and ${changes.sold.length - 5} more</li>`;
-    }
-    emailContent += '</ul>';
-  }
-
-  if (changes.pending.length > 0) {
-    emailContent += `<h3>⏳ Pending (${changes.pending.length})</h3><ul>`;
-    changes.pending.slice(0, 5).forEach(b => {
-      emailContent += `<li>${b.title}</li>`;
-    });
-    if (changes.pending.length > 5) {
-      emailContent += `<li>... and ${changes.pending.length - 5} more</li>`;
-    }
-    emailContent += '</ul>';
-  }
-
-  if (changes.priceChanges.length > 0) {
-    emailContent += `<h3>💰 Price Changes (${changes.priceChanges.length})</h3><ul>`;
-    changes.priceChanges.slice(0, 5).forEach(c => {
-      emailContent += `<li><strong>${c.boat.title}</strong><br/><span class="price-change">${c.oldPrice} → ${c.newPrice}</span></li>`;
-    });
-    if (changes.priceChanges.length > 5) {
-      emailContent += `<li>... and ${changes.priceChanges.length - 5} more</li>`;
-    }
-    emailContent += '</ul>';
-  }
-
-  emailContent += `<hr/><p class="footer">This is an automated notification from Seager Marine Competitor Monitor</p></body></html>`;;
-
-  const emailPayload = {
-    personalizations: [
-      {
-        to: [{ email: toEmail }, { email: toEmail2 }],
-        subject: `Seager Marine Monitor - ${competitor} Update`
-      }
-    ],
-    from: { email: fromEmail },
-    content: [
-      {
-        type: 'text/html',
-        value: emailContent
-      }
-    ]
-  };
-
-  try {
-    await axios.post('https://api.sendgrid.com/v3/mail/send', emailPayload, {
-      headers: {
-        'Authorization': `Bearer ${sendgridApiKey}`,
-        'Content-Type': 'application/json'
-      }
-    });
-    console.log(`📧 Email notification sent for ${competitor}`);
-  } catch (error) {
-    console.error(`📧 Email notification failed for ${competitor}:`, error.message);
-  }
-}
-
-// Main monitoring function
-async function runMonitor() {
-  console.log('🚀 Starting competitor monitoring...');
-  initDatabase();
-
-  const db = getDatabase();
-  const results = {
-    timestamp: new Date().toISOString(),
-    competitors: {}
-  };
-
-  for (const competitor of COMPETITORS) {
-    console.log(`📍 Fetching ${competitor.name}...`);
-    const fetchResult = await fetchCompetitor(competitor);
-
-    if (fetchResult.success) {
-      const oldData = db.competitors[competitor.name];
-      const changes = detectChanges(oldData, fetchResult.boats);
-
-      results.competitors[competitor.name] = {
-        success: true,
-        boats: fetchResult.boats,
-        changes,
-        fetchedAt: fetchResult.fetchedAt
-      };
-
-      // Send notification if there are changes
-      if (Object.values(changes).some(arr => arr.length > 0)) {
-        console.log(`📢 Changes detected for ${competitor.name}`);
-        await sendEmailNotification(changes, competitor.name);
-      }
-
-      db.competitors[competitor.name] = fetchResult.boats;
-    } else {
-      console.error(`❌ Failed to fetch ${competitor.name}: ${fetchResult.error}`);
-      results.competitors[competitor.name] = {
-        success: false,
-        error: fetchResult.error
-      };
-    }
-
-    // Rate limiting
-    await new Promise(resolve => setTimeout(resolve, 2000));
-  }
-
-  db.lastUpdated = new Date().toISOString();
-  saveDatabase(db);
-
-  // Save results
-  fs.writeFileSync(path.join(DATA_DIR, `results-${Date.now()}.json`), JSON.stringify(results, null, 2));
-  console.log('✅ Monitor run completed');
-
-  return results;
-}
-
-// Export for use in other modules
-module.exports = {
-  runMonitor,
-  getDatabase,
-  COMPETITORS
 };
 
-// Run if executed directly
-if (require.main === module) {
-  runMonitor().then(() => process.exit(0)).catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+// Parse individual boat card
+function parseBoat($, boatElement) {
+  try {
+    const $boat = cheerio.load(boatElement);
+    const $article = $boat('article.v7list-vehicle');
+    
+    const title = $article.find('h3.v7list-vehicle__heading').text().trim();
+    const linkHref = $article.find('a.vehicle-heading__link').attr('href');
+    const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.marksleisuretimemarine.com' + linkHref) : null;
+    const currentPrice = $article.find('span.vehicle-price.vehicle-price--current').text().trim();
+    const savings = $article.find('span.vehicle-price.vehicle-price--savings').text().trim();
+    const status = $article.find('span.vehicle-image__overlay-content span.vehicle-image__overlay-text').text().trim();
+    
+    return {
+      title,
+      link,
+      currentPrice,
+      savings,
+      status: status || 'In Stock'
+    };
+  } catch (error) {
+    console.error('Error parsing boat:', error.message);
+    return null;
+  }
 }
+
+// Fetch Mark's boats
+async function fetchMarksBoats() {
+  try {
+    console.log(`Fetching ${MARKS_CONFIG.name}...`);
+    const response = await axios.get(MARKS_CONFIG.url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      }
+    });
+    
+    const html = response.data;
+    const $ = cheerio.load(html);
+    
+    const boats = [];
+    const $container = $(MARKS_CONFIG.selectors.parentContainer);
+    
+    if ($container.length === 0) {
+      console.warn(`⚠️ Parent container not found`);
+      return boats;
+    }
+    
+    $container.find(MARKS_CONFIG.selectors.boatCard).each((idx, boatEl) => {
+      const boat = parseBoat($, boatEl);
+      if (boat && boat.title) {
+        boats.push(boat);
+      }
+    });
+    
+    console.log(`✅ Found ${boats.length} boats`);
+    return boats;
+    
+  } catch (error) {
+    console.error(`❌ Error fetching boats:`, error.message);
+    return [];
+  }
+}
+
+// Build HTML email
+function buildEmailHTML(boats) {
+  let html = `
+    <h2 style="color: #0066cc;">🚤 ${MARKS_CONFIG.name}</h2>
+    <p style="font-size: 14px; color: #666;">Inventory as of ${new Date().toLocaleString()}</p>
+  `;
+  
+  if (boats.length === 0) {
+    html += `<p>No boats found.</p>`;
+    return html;
+  }
+  
+  html += `<p style="font-size: 12px; color: #666; margin-bottom: 15px;">Found ${boats.length} boats</p>`;
+  
+  boats.slice(0, 5).forEach(boat => {
+    html += `
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #0066cc; border-radius: 4px;">
+        <p style="margin: 5px 0; font-weight: bold;">
+          <a href="${boat.link || '#'}" style="color: #0066cc; text-decoration: none; font-size: 15px;">
+            ${boat.title}
+          </a>
+        </p>
+        <p style="margin: 5px 0; font-size: 13px;">
+          <strong>Status:</strong> ${boat.status}
+        </p>
+        <p style="margin: 5px 0; font-size: 13px;">
+          <strong>Price:</strong> ${boat.currentPrice}
+          ${boat.savings ? ` | <strong>Savings:</strong> ${boat.savings}` : ''}
+        </p>
+      </div>
+    `;
+  });
+  
+  if (boats.length > 5) {
+    html += `<p style="font-size: 12px; color: #666; margin: 15px 0;">...and ${boats.length - 5} more boats</p>`;
+  }
+  
+  return html;
+}
+
+// Send email via SendGrid
+async function sendEmail(htmlContent) {
+  try {
+    const sgMail = require('@sendgrid/mail');
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    
+    const msg = {
+      to: process.env.SENDGRID_TO_EMAIL,
+      from: process.env.SENDGRID_FROM_EMAIL,
+      subject: `🚤 Mark's Leisure Time Marine Inventory - ${new Date().toLocaleDateString()}`,
+      html: htmlContent
+    };
+    
+    // Add second email if provided
+    if (process.env.SENDGRID_TO_EMAIL_2) {
+      msg.to = [process.env.SENDGRID_TO_EMAIL, process.env.SENDGRID_TO_EMAIL_2];
+    }
+    
+    await sgMail.send(msg);
+    console.log('✅ Email sent successfully');
+  } catch (error) {
+    console.error('❌ Error sending email:', error.message);
+  }
+}
+
+// Main function
+async function monitor() {
+  console.log('\n📊 Starting Mark\'s Leisure Time Marine monitoring...');
+  
+  const boats = await fetchMarksBoats();
+  const emailHTML = buildEmailHTML(boats);
+  
+  await sendEmail(emailHTML);
+}
+
+// Run
+monitor().catch(console.error);
