@@ -122,23 +122,39 @@ function buildEmailHTML(boats) {
 
 // Send email via SendGrid
 async function sendEmail(htmlContent) {
+  const sendgridApiKey = process.env.SENDGRID_API_KEY;
+  const fromEmail = process.env.SENDGRID_FROM_EMAIL;
+  const toEmail = process.env.SENDGRID_TO_EMAIL;
+  const toEmail2 = process.env.SENDGRID_TO_EMAIL_2;
+
+  if (!sendgridApiKey || !fromEmail || !toEmail) {
+    console.warn('⚠️ SendGrid credentials not configured, skipping email');
+    return;
+  }
+
+  const emailPayload = {
+    personalizations: [
+      {
+        to: toEmail2 ? [{ email: toEmail }, { email: toEmail2 }] : [{ email: toEmail }],
+        subject: `🚤 Mark's Leisure Time Marine Inventory - ${new Date().toLocaleDateString()}`
+      }
+    ],
+    from: { email: fromEmail },
+    content: [
+      {
+        type: 'text/html',
+        value: htmlContent
+      }
+    ]
+  };
+
   try {
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    
-    const msg = {
-      to: process.env.SENDGRID_TO_EMAIL,
-      from: process.env.SENDGRID_FROM_EMAIL,
-      subject: `🚤 Mark's Leisure Time Marine Inventory - ${new Date().toLocaleDateString()}`,
-      html: htmlContent
-    };
-    
-    // Add second email if provided
-    if (process.env.SENDGRID_TO_EMAIL_2) {
-      msg.to = [process.env.SENDGRID_TO_EMAIL, process.env.SENDGRID_TO_EMAIL_2];
-    }
-    
-    await sgMail.send(msg);
+    await axios.post('https://api.sendgrid.com/v3/mail/send', emailPayload, {
+      headers: {
+        'Authorization': `Bearer ${sendgridApiKey}`,
+        'Content-Type': 'application/json'
+      }
+    });
     console.log('✅ Email sent successfully');
   } catch (error) {
     console.error('❌ Error sending email:', error.message);
