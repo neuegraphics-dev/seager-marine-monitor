@@ -1,10 +1,8 @@
 name: Seager Monitor
-
 on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
-
 jobs:
   monitor:
     runs-on: ubuntu-latest
@@ -24,3 +22,11 @@ jobs:
           SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
+
+      - name: Commit inventory updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/inventory.json
+          git commit -m "Update inventory.json" || true
+          git push
