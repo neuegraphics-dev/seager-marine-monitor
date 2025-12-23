@@ -7,7 +7,7 @@ require('dotenv').config();
 // Mark's Leisure Time Marine configuration
 const MARKS_CONFIG = {
   name: "Mark's Leisure Time Marine",
-  url: 'https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&pg=1&sz=50',
+  url: 'https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&make=avalon&make=lund&make=nautique&pg=1&sz=50',
   selectors: {
     parentContainer: 'div.v7list-results',
     boatCard: 'article.v7list-vehicle',
@@ -87,11 +87,13 @@ function parseBoat($, boatElement) {
   }
 }
 
-// Fetch Mark's boats
-async function fetchMarksBoats() {
+// Fetch a single page of Mark's boats
+async function fetchPage(pageNum) {
   try {
-    console.log(`Fetching ${MARKS_CONFIG.name}...`);
-    const response = await axios.get(MARKS_CONFIG.url, {
+    const url = `https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&pg=${pageNum}&sz=50`;
+    
+    console.log(`Fetching page ${pageNum}...`);
+    const response = await axios.get(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
       }
@@ -104,7 +106,7 @@ async function fetchMarksBoats() {
     const $container = $(MARKS_CONFIG.selectors.parentContainer);
     
     if ($container.length === 0) {
-      console.warn(`⚠️ Parent container not found`);
+      console.warn(`⚠️ Parent container not found on page ${pageNum}`);
       return boats;
     }
     
@@ -115,11 +117,45 @@ async function fetchMarksBoats() {
       }
     });
     
-    console.log(`✅ Found ${boats.length} boats`);
+    console.log(`✅ Found ${boats.length} boats on page ${pageNum}`);
     return boats;
     
   } catch (error) {
-    console.error(`❌ Error fetching boats:`, error.message);
+    console.error(`❌ Error fetching page ${pageNum}:`, error.message);
+    return [];
+  }
+}
+
+// Fetch all pages of Mark's boats
+async function fetchAllPages() {
+  try {
+    console.log(`Fetching all pages for ${MARKS_CONFIG.name}...`);
+    let allBoats = [];
+    let pageNum = 1;
+    let hasMorePages = true;
+
+    while (hasMorePages) {
+      const pageBoats = await fetchPage(pageNum);
+      
+      if (pageBoats.length === 0) {
+        hasMorePages = false;
+      } else {
+        allBoats = allBoats.concat(pageBoats);
+        
+        // If we got fewer than 50 boats, this is the last page
+        if (pageBoats.length < 50) {
+          hasMorePages = false;
+        } else {
+          pageNum++;
+        }
+      }
+    }
+    
+    console.log(`✅ Total boats found across all pages: ${allBoats.length}`);
+    return allBoats;
+    
+  } catch (error) {
+    console.error(`❌ Error fetching pages:`, error.message);
     return [];
   }
 }
@@ -280,7 +316,7 @@ async function monitor() {
 
   const db = getDatabase();
   const oldBoats = db.marks || [];
-  const newBoats = await fetchMarksBoats();
+  const newBoats = await fetchAllPages();
 
   // Detect changes
   const changes = detectChanges(oldBoats, newBoats);
