@@ -16,30 +16,24 @@ app.get('/api/inventory', (req, res) => {
     if (!fs.existsSync(DB_FILE)) {
       return res.json({ competitors: {}, timestamp: null });
     }
-
     const data = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
     
-    // Transform database to include recent results
-    const resultsDir = DATA_DIR;
-    let latestResults = null;
-
-    if (fs.existsSync(resultsDir)) {
-      const files = fs.readdirSync(resultsDir)
-        .filter(f => f.startsWith('results-'))
-        .sort()
-        .reverse();
-
-      if (files.length > 0) {
-        const latestFile = path.join(resultsDir, files[0]);
-        latestResults = JSON.parse(fs.readFileSync(latestFile, 'utf8'));
-      }
-    }
-
     const response = {
       timestamp: data.lastUpdated,
-      competitors: latestResults?.competitors || {}
+      competitors: {
+        'marks': {
+          boats: data.marks || [],
+          changes: {
+            added: [],
+            removed: [],
+            sold: [],
+            pending: [],
+            priceChanges: []
+          },
+          success: true
+        }
+      }
     };
-
     res.json(response);
   } catch (error) {
     console.error('Error reading inventory:', error);
