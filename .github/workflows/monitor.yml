@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 13 * * 5'  # Runs every Friday at 8:00 AM EST (1:00 PM UTC)
   workflow_dispatch:
+  
+concurrency:
+  group: seager-monitor
+  cancel-in-progress: false
+  
 jobs:
   monitor:
     runs-on: ubuntu-latest
