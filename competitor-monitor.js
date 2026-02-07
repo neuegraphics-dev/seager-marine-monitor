@@ -100,6 +100,8 @@ function parseBoat($, boatElement) {
     const currentPrice = $article.find('span.vehicle-price.vehicle-price--current').text().trim();
     const savings = $article.find('span.vehicle-price.vehicle-price--savings').text().trim();
     const status = $article.find('span.vehicle-image__overlay-content span.vehicle-image__overlay-text').text().trim();
+    const vehicleImage = $article.find('img.vehicle__image').attr('data-dsp-small-image');
+    const vehicleImageHref = vehicleImage ? (vehicleImage.startsWith('http') ? vehicleImage : 'https:' + vehicleImage) : null;
     
     return {
       id: getBoatId(title, currentPrice),
@@ -108,6 +110,7 @@ function parseBoat($, boatElement) {
       currentPrice,
       savings,
       status: status || 'In Stock',
+      vehicleImageHref,  // ✅ ADD THIS LINE
       fetchedAt: new Date().toISOString()
     };
   } catch (error) {
@@ -364,7 +367,8 @@ function detectChanges(oldBoats, newBoats) {
         title: newBoat.title,
         oldPrice: oldBoat.currentPrice,
         newPrice: newBoat.currentPrice,
-        link: newBoat.link
+        link: newBoat.link,
+        vehicleImageHref: newBoat.vehicleImageHref,
       });
     }
   });
@@ -379,19 +383,39 @@ function detectChanges(oldBoats, newBoats) {
 /**
  * Build HTML email content from detected changes
  * Creates a formatted email showing added, removed, and price changed boats
+ * If no changes, shows a friendly confirmation message
  */
-function buildEmailHTML(changes) {
+function buildEmailHTML(changes, hasChanges = true) {
   let html = `
     <h2 style="color: #0066cc;">🚤 ${MARKS_CONFIG.name}</h2>
-    <p style="font-size: 14px; color: #666;">Update detected at ${new Date().toLocaleString()}</p>
+    <p style="font-size: 14px; color: #666;">Update checked at ${new Date().toLocaleString()}</p>
   `;
 
+  // If no changes, show friendly message
+  if (!hasChanges) {
+    html += `
+      <div style="margin: 20px 0; padding: 20px; background: #f0f8ff; border-left: 4px solid #0066cc; border-radius: 4px;">
+        <p style="margin: 0; font-size: 15px; color: #333;">
+          ✅ <strong>No changes detected.</strong> No new boats, removals, or price changes since the last check.
+        </p>
+        <p style="margin: 10px 0 0 0; font-size: 13px; color: #666;">
+          We're keeping an eye on things and will let you know as soon as anything changes.
+        </p>
+      </div>
+    `;
+    return html;
+  }
+
   // Added boats section
-  if (changes.added.length > 0) {
-    html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
-    changes.added.forEach(boat => {
-      html += `
-        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 4px;">
+if (changes.added.length > 0) {
+  html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
+  changes.added.forEach(boat => {
+    html += `
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px;">
+        ${boat.vehicleImageHref ? `
+          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 4px; flex-shrink: 0;" />
+        ` : ''}
+        <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">
             <a href="${boat.link || '#'}" style="color: #0066cc; text-decoration: none; font-size: 15px;">
               ${boat.title}
@@ -405,29 +429,39 @@ function buildEmailHTML(changes) {
             ${boat.savings ? ` | <strong>Savings:</strong> ${boat.savings}` : ''}
           </p>
         </div>
-      `;
-    });
-  }
+      </div>
+    `;
+  });
+}
 
-  // Removed boats section
-  if (changes.removed.length > 0) {
-    html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
-    changes.removed.forEach(boat => {
-      html += `
-        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 4px;">
+// Removed boats section - also add images here
+if (changes.removed.length > 0) {
+  html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
+  changes.removed.forEach(boat => {
+    html += `
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px;">
+        ${boat.vehicleImageHref ? `
+          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 4px; flex-shrink: 0;" />
+        ` : ''}
+        <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">${boat.title}</p>
           <p style="margin: 5px 0; font-size: 13px;">${boat.currentPrice}</p>
         </div>
-      `;
-    });
-  }
+      </div>
+    `;
+  });
+}
 
-  // Price changes section
-  if (changes.priceChanges.length > 0) {
-    html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
-    changes.priceChanges.forEach(change => {
-      html += `
-        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 4px;">
+// Price changes section - add images here too
+if (changes.priceChanges.length > 0) {
+  html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
+  changes.priceChanges.forEach(change => {
+    html += `
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px;">
+        ${change.vehicleImageHref ? `
+          <img src="${change.vehicleImageHref}" alt="${change.title}" style="width: 120px; height: auto; border-radius: 4px; flex-shrink: 0;" />
+        ` : ''}
+        <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">
             <a href="${change.link || '#'}" style="color: #0066cc; text-decoration: none;">
               ${change.title}
@@ -437,12 +471,12 @@ function buildEmailHTML(changes) {
             <strong style="color: #e74c3c;">${change.oldPrice}</strong> → <strong style="color: #27ae60;">${change.newPrice}</strong>
           </p>
         </div>
-      `;
-    });
-  }
-
-  return html;
+      </div>
+    `;
+  });
 }
+  return html;  // ✅ Return the complete HTML
+}  // ✅ Close the function properly
 
 /**
  * Send email via SendGrid API
@@ -528,12 +562,13 @@ async function monitor() {
     console.log(`   ✨ Added: ${changes.added.length}`);
     console.log(`   ❌ Removed: ${changes.removed.length}`);
     console.log(`   💰 Price Changes: ${changes.priceChanges.length}`);
-    
-    const emailHTML = buildEmailHTML(changes);
-    await sendEmail(emailHTML);
   } else {
-    console.log('✅ No changes detected - skipping email');
+    console.log('✅ No changes detected - but still sending confirmation email');
   }
+  
+  // Always send email (either with changes or confirmation message)
+  const emailHTML = buildEmailHTML(changes, hasChanges);
+  await sendEmail(emailHTML);
 
   // IMPORTANT: Save REPLACES the entire marks array with newBoats
   // This does NOT append - it completely overwrites the previous data
