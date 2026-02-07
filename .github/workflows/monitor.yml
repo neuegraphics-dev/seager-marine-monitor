@@ -1,7 +1,7 @@
 name: Seager Monitor
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 13 * * 5'  # Runs every Friday at 8:00 AM EST (1:00 PM UTC)
   workflow_dispatch:
 jobs:
   monitor:
@@ -22,7 +22,6 @@ jobs:
           SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
           SENDGRID_TO_EMAIL: ${{ secrets.SENDGRID_TO_EMAIL }}
           SENDGRID_TO_EMAIL_2: ${{ secrets.SENDGRID_TO_EMAIL_2 }}
-
       - name: Commit inventory updates
         run: |
           git config --local user.email "action@github.com"
