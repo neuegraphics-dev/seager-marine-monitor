@@ -100,8 +100,22 @@ function parseBoat($, boatElement) {
     const currentPrice = $article.find('span.vehicle-price.vehicle-price--current').text().trim();
     const savings = $article.find('span.vehicle-price.vehicle-price--savings').text().trim();
     const status = $article.find('span.vehicle-image__overlay-content span.vehicle-image__overlay-text').text().trim();
-    const vehicleImage = $article.find('.vehicle__image').attr('data-dsp-small-image');
-    const vehicleImageHref = vehicleImage ? (vehicleImage.startsWith('http') ? vehicleImage : 'https:' + vehicleImage) : null;
+    
+    // Extract image URL from data-dsp-small-image attribute
+    let vehicleImageHref = null;
+    const vehicleImageAttr = $article.find('a.vehicle__image').attr('data-dsp-small-image');
+    
+    if (vehicleImageAttr) {
+      // Parse: url('//cdn.dealerspike.com/imglib/v1/160x120/imglib/trimsdb/25744281-0-146523671.png')
+      const urlMatch = vehicleImageAttr.match(/url\(['"]?([^'"]+)['"]?\)/);
+      if (urlMatch && urlMatch[1]) {
+        let extractedUrl = urlMatch[1];
+        // Upgrade to larger image: 160x120 → 640x480
+        extractedUrl = extractedUrl.replace('/160x120/', '/640x480/');
+        // Add https: protocol if missing
+        vehicleImageHref = extractedUrl.startsWith('//') ? 'https:' + extractedUrl : extractedUrl;
+      }
+    }
     
     return {
       id: getBoatId(title, currentPrice),
@@ -110,7 +124,7 @@ function parseBoat($, boatElement) {
       currentPrice,
       savings,
       status: status || 'In Stock',
-      vehicleImageHref,  // ✅ ADD THIS LINE
+      vehicleImageHref,
       fetchedAt: new Date().toISOString()
     };
   } catch (error) {
