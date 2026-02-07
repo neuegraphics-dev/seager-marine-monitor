@@ -100,7 +100,7 @@ function parseBoat($, boatElement) {
     const currentPrice = $article.find('span.vehicle-price.vehicle-price--current').text().trim();
     const savings = $article.find('span.vehicle-price.vehicle-price--savings').text().trim();
     const status = $article.find('span.vehicle-image__overlay-content span.vehicle-image__overlay-text').text().trim();
-    const vehicleImage = $article.find('img.vehicle__image').attr('data-dsp-small-image');
+    const vehicleImage = $article.find('.vehicle__image').attr('data-dsp-small-image');
     const vehicleImageHref = vehicleImage ? (vehicleImage.startsWith('http') ? vehicleImage : 'https:' + vehicleImage) : null;
     
     return {
