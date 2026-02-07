@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T13:46:00.089Z",
+  "lastUpdated": "2026-02-07T18:49:24.846Z",
   "marks": [
     {
       "id": "2024searayslx260surf-ourprice184451",
@@ -8,7 +8,8 @@
       "currentPrice": "Our Price   \n                    \n                        $184,451",
       "savings": "Savings\n                   \n                    $75,283",
       "status": "$20K REBATE AVAILABLE65",
-      "fetchedAt": "2026-02-07T13:45:53.069Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.123Z"
     },
     {
       "id": "2025barlettaboatsa22qc-ourprice46995",
@@ -17,7 +18,8 @@
       "currentPrice": "Our Price   \n                    \n                        $46,995",
       "savings": "",
       "status": "Available29",
-      "fetchedAt": "2026-02-07T13:45:53.071Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.125Z"
     },
     {
       "id": "2025barlettaboatsc22m-toolowtoadvertise",
@@ -26,7 +28,8 @@
       "currentPrice": "Too Low To Advertise",
       "savings": "",
       "status": "Sale Pending",
-      "fetchedAt": "2026-02-07T13:45:53.072Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.125Z"
     },
     {
       "id": "2025baylinerd20-ourprice49999",
@@ -35,7 +38,8 @@
       "currentPrice": "Our Price   \n                    \n                        $49,999",
       "savings": "Savings\n                   \n                    $8,131",
       "status": "Available44",
-      "fetchedAt": "2026-02-07T13:45:53.072Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.126Z"
     },
     {
       "id": "2025baylinerd22i-ourprice59995",
@@ -44,7 +48,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,995",
       "savings": "Savings\n                   \n                    $10,640",
       "status": "Reduced Price44",
-      "fetchedAt": "2026-02-07T13:45:53.073Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.127Z"
     },
     {
       "id": "2025baylinert22sc-ourprice89999",
@@ -53,7 +58,8 @@
       "currentPrice": "Our Price   \n                    \n                        $89,999",
       "savings": "Savings\n                   \n                    $7,966",
       "status": "REBATES AVAILABLE",
-      "fetchedAt": "2026-02-07T13:45:53.074Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.127Z"
     },
     {
       "id": "2025baylinert22sc-ourprice79851",
@@ -62,7 +68,8 @@
       "currentPrice": "Our Price   \n                    \n                        $79,851",
       "savings": "Savings\n                   \n                    $5,769",
       "status": "REBATES AVAILABLE26",
-      "fetchedAt": "2026-02-07T13:45:53.074Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.128Z"
     },
     {
       "id": "2025baylinerv20i-ourprice59999",
@@ -71,7 +78,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,999",
       "savings": "Savings\n                   \n                    $591",
       "status": "Available9",
-      "fetchedAt": "2026-02-07T13:45:53.075Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.129Z"
     },
     {
       "id": "2025baylinervr4bowrider-outboard-clickforaquote",
@@ -80,7 +88,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available38",
-      "fetchedAt": "2026-02-07T13:45:53.076Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.129Z"
     },
     {
       "id": "2025baylinervr4bowrider-outboard-ourprice39495",
@@ -89,7 +98,8 @@
       "currentPrice": "Our Price   \n                    \n                        $39,495",
       "savings": "Savings\n                   \n                    $1,655",
       "status": "Available38",
-      "fetchedAt": "2026-02-07T13:45:53.076Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.130Z"
     },
     {
       "id": "2025chriscraftlaunch28gt-clickforaquote",
@@ -98,7 +108,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:53.077Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.131Z"
     },
     {
       "id": "2025harriscruiser230cwdh-ourprice56999",
@@ -107,7 +118,8 @@
       "currentPrice": "Our Price   \n                    \n                        $56,999",
       "savings": "Savings\n                   \n                    $19,250",
       "status": "CLEARANCE MUST GO!34",
-      "fetchedAt": "2026-02-07T13:45:53.078Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.131Z"
     },
     {
       "id": "2025harriscruiser250sl-ourprice58999",
@@ -116,7 +128,8 @@
       "currentPrice": "Our Price   \n                    \n                        $58,999",
       "savings": "Savings\n                   \n                    $20,279",
       "status": "CLEARANCE MUST GO!43",
-      "fetchedAt": "2026-02-07T13:45:53.079Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.132Z"
     },
     {
       "id": "2025mastercraftx24-ourprice279851",
@@ -125,7 +138,8 @@
       "currentPrice": "Our Price   \n                    \n                        $279,851",
       "savings": "Savings\n                   \n                    $100,036",
       "status": "CLEARANCE MUST GO!",
-      "fetchedAt": "2026-02-07T13:45:53.079Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.133Z"
     },
     {
       "id": "2025mastercraftxt23-clickforaquote",
@@ -134,7 +148,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "CLEARANCE MUST GO!",
-      "fetchedAt": "2026-02-07T13:45:53.080Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.133Z"
     },
     {
       "id": "2025searaysdx250surf-ourprice179999",
@@ -143,7 +158,8 @@
       "currentPrice": "Our Price   \n                    \n                        $179,999",
       "savings": "Savings\n                   \n                    $42,896",
       "status": "REBATES AVAILABLE",
-      "fetchedAt": "2026-02-07T13:45:53.080Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.134Z"
     },
     {
       "id": "2025searayspx190-ourprice59999",
@@ -152,7 +168,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,999",
       "savings": "Savings\n                   \n                    $3,581",
       "status": "REBATES AVAILABLE",
-      "fetchedAt": "2026-02-07T13:45:53.081Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.134Z"
     },
     {
       "id": "2025sportsmanopen252-ourprice149999",
@@ -161,7 +178,8 @@
       "currentPrice": "Our Price   \n                    \n                        $149,999",
       "savings": "Savings\n                   \n                    $71,171",
       "status": "Reduced Price",
-      "fetchedAt": "2026-02-07T13:45:53.081Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.135Z"
     },
     {
       "id": "2026barlettaboatsa20l-ourprice55430",
@@ -170,7 +188,8 @@
       "currentPrice": "Our Price   \n                    \n                        $55,430",
       "savings": "Savings\n                   \n                    $16,445",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:53.082Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.136Z"
     },
     {
       "id": "2026barlettaboatsa20l-ourprice59995",
@@ -179,7 +198,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,995",
       "savings": "Savings\n                   \n                    $15,355",
       "status": "Available39",
-      "fetchedAt": "2026-02-07T13:45:53.083Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.136Z"
     },
     {
       "id": "2026barlettaboatsa20uc-clickforaquote",
@@ -188,7 +208,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Sold32",
-      "fetchedAt": "2026-02-07T13:45:53.083Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.137Z"
     },
     {
       "id": "2026barlettaboatsa22qc-ourprice59930",
@@ -197,7 +218,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,930",
       "savings": "Savings\n                   \n                    $17,070",
       "status": "Available36",
-      "fetchedAt": "2026-02-07T13:45:53.084Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.137Z"
     },
     {
       "id": "2026barlettaboatsa22qc-ourprice61004",
@@ -206,7 +228,8 @@
       "currentPrice": "Our Price   \n                    \n                        $61,004",
       "savings": "Savings\n                   \n                    $18,239",
       "status": "just arrived!51",
-      "fetchedAt": "2026-02-07T13:45:53.084Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.138Z"
     },
     {
       "id": "2026barlettaboatsa22uc-ourprice62630",
@@ -215,7 +238,8 @@
       "currentPrice": "Our Price   \n                    \n                        $62,630",
       "savings": "Savings\n                   \n                    $17,745",
       "status": "Available23",
-      "fetchedAt": "2026-02-07T13:45:53.085Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.138Z"
     },
     {
       "id": "2026barlettaboatsa22uctriple-toon-ourprice69995",
@@ -224,7 +248,8 @@
       "currentPrice": "Our Price   \n                    \n                        $69,995",
       "savings": "Savings\n                   \n                    $19,521",
       "status": "Available50",
-      "fetchedAt": "2026-02-07T13:45:53.085Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.139Z"
     },
     {
       "id": "2026barlettaboatsa22uctriple-toon-ourprice70010",
@@ -233,7 +258,8 @@
       "currentPrice": "Our Price   \n                    \n                        $70,010",
       "savings": "Savings\n                   \n                    $20,186",
       "status": "Available44",
-      "fetchedAt": "2026-02-07T13:45:53.086Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.139Z"
     },
     {
       "id": "2026barlettaboatsc22qctriple-toon-ourprice84421",
@@ -242,7 +268,8 @@
       "currentPrice": "Our Price   \n                    \n                        $84,421",
       "savings": "Savings\n                   \n                    $14,898",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:53.087Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.140Z"
     },
     {
       "id": "2026barlettaboatsc22u-ourprice81962",
@@ -251,7 +278,8 @@
       "currentPrice": "Our Price   \n                    \n                        $81,962",
       "savings": "Savings\n                   \n                    $14,464",
       "status": "Available53",
-      "fetchedAt": "2026-02-07T13:45:53.087Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.141Z"
     },
     {
       "id": "2026barlettaboatsc22uctriple-toon-ourprice87695",
@@ -260,7 +288,8 @@
       "currentPrice": "Our Price   \n                    \n                        $87,695",
       "savings": "Savings\n                   \n                    $15,794",
       "status": "Available51",
-      "fetchedAt": "2026-02-07T13:45:53.088Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.142Z"
     },
     {
       "id": "2026barlettaboatsc24uc-ourprice87910",
@@ -269,7 +298,8 @@
       "currentPrice": "Our Price   \n                    \n                        $87,910",
       "savings": "Savings\n                   \n                    $15,514",
       "status": "Available56",
-      "fetchedAt": "2026-02-07T13:45:53.088Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.142Z"
     },
     {
       "id": "2026barlettaboatsc24uetriple-toon-ourprice91046",
@@ -278,7 +308,8 @@
       "currentPrice": "Our Price   \n                    \n                        $91,046",
       "savings": "Savings\n                   \n                    $16,068",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:53.089Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.143Z"
     },
     {
       "id": "2026barlettaboatsl23ma-ourprice192490",
@@ -287,7 +318,8 @@
       "currentPrice": "Our Price   \n                    \n                        $192,490",
       "savings": "Savings\n                   \n                    $33,969",
       "status": "Available46",
-      "fetchedAt": "2026-02-07T13:45:53.089Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.144Z"
     },
     {
       "id": "2026barlettaboatsv26m-clickforaquote",
@@ -296,7 +328,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:45:53.090Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.144Z"
     },
     {
       "id": "2026baylinerd20i-clickforaquote",
@@ -305,7 +338,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING5",
-      "fetchedAt": "2026-02-07T13:45:53.090Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.145Z"
     },
     {
       "id": "2026baylinerd22i-clickforaquote",
@@ -314,7 +348,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING6",
-      "fetchedAt": "2026-02-07T13:45:53.091Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.145Z"
     },
     {
       "id": "2026baylinert18-startingat31995",
@@ -323,7 +358,8 @@
       "currentPrice": "Starting at $31,995",
       "savings": "",
       "status": "order available6",
-      "fetchedAt": "2026-02-07T13:45:53.091Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.146Z"
     },
     {
       "id": "2026baylinert20cc-startingat45100",
@@ -332,7 +368,8 @@
       "currentPrice": "Starting at $45,100",
       "savings": "",
       "status": "order available2",
-      "fetchedAt": "2026-02-07T13:45:53.092Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.146Z"
     },
     {
       "id": "2026baylinert22cc-startingat54810",
@@ -341,7 +378,8 @@
       "currentPrice": "Starting at $54,810",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:45:53.092Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.147Z"
     },
     {
       "id": "2026baylinert23explorer-startingat99177",
@@ -350,7 +388,8 @@
       "currentPrice": "Starting at $99,177",
       "savings": "",
       "status": "order available1",
-      "fetchedAt": "2026-02-07T13:45:53.093Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.147Z"
     },
     {
       "id": "2026baylinert23pilothouse-startingat103687",
@@ -359,7 +398,8 @@
       "currentPrice": "Starting at $103,687",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:53.093Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.148Z"
     },
     {
       "id": "2026baylinert24cc-startingat66915",
@@ -368,7 +408,8 @@
       "currentPrice": "Starting at $66,915",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:45:53.094Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.148Z"
     },
     {
       "id": "2026baylinert25explorer-startingat133623",
@@ -377,7 +418,8 @@
       "currentPrice": "Starting at $133,623",
       "savings": "",
       "status": "order available1",
-      "fetchedAt": "2026-02-07T13:45:53.094Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.149Z"
     },
     {
       "id": "2026baylinert25pilothouse-startingat139924",
@@ -386,7 +428,8 @@
       "currentPrice": "Starting at 139,924",
       "savings": "",
       "status": "order available2",
-      "fetchedAt": "2026-02-07T13:45:53.095Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.149Z"
     },
     {
       "id": "2026baylinert29explorer-startingat232053",
@@ -395,7 +438,8 @@
       "currentPrice": "Starting at $232,053",
       "savings": "",
       "status": "order available3",
-      "fetchedAt": "2026-02-07T13:45:53.095Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.150Z"
     },
     {
       "id": "2026baylinerv20bowrider-clickforaquote",
@@ -404,7 +448,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING7",
-      "fetchedAt": "2026-02-07T13:45:53.096Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.150Z"
     },
     {
       "id": "2026baylinervr6bowrider-startingat51065",
@@ -413,7 +458,8 @@
       "currentPrice": "Starting at $51,065",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:45:53.096Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.151Z"
     },
     {
       "id": "2026chriscraftcalypso24-startingat251930",
@@ -422,7 +468,8 @@
       "currentPrice": "Starting at $251,930",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:53.096Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.151Z"
     },
     {
       "id": "2026chriscraftcalypso28-startingat338490",
@@ -431,7 +478,8 @@
       "currentPrice": "Starting at $338,490",
       "savings": "",
       "status": "order available10",
-      "fetchedAt": "2026-02-07T13:45:53.097Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.152Z"
     },
     {
       "id": "2026chriscraftcalypso32-startingat633480",
@@ -440,7 +488,8 @@
       "currentPrice": "Starting at $633,480",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:53.097Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.152Z"
     },
     {
       "id": "2026chriscraftcalypso35-startingat783220",
@@ -449,7 +498,8 @@
       "currentPrice": "Starting at $783,220",
       "savings": "",
       "status": "order available11",
-      "fetchedAt": "2026-02-07T13:45:53.098Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:16.153Z"
     },
     {
       "id": "2026chriscraftcatalina24-startingat263920",
@@ -458,7 +508,8 @@
       "currentPrice": "Starting at $263,920",
       "savings": "",
       "status": "order available10",
-      "fetchedAt": "2026-02-07T13:45:56.725Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.116Z"
     },
     {
       "id": "2026chriscraftcatalina28-startingat346690",
@@ -467,7 +518,8 @@
       "currentPrice": "Starting at $346,690",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:56.726Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.117Z"
     },
     {
       "id": "2026chriscraftcatalina31-startingat489410",
@@ -476,7 +528,8 @@
       "currentPrice": "Starting at $489,410",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:56.726Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.118Z"
     },
     {
       "id": "2026chriscraftlaunch28gt-clickforaquote",
@@ -485,7 +538,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available3",
-      "fetchedAt": "2026-02-07T13:45:56.727Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.118Z"
     },
     {
       "id": "2026chriscraftlaunch31gt-startingat484070",
@@ -494,7 +548,8 @@
       "currentPrice": "Starting at $484,070",
       "savings": "",
       "status": "order available9",
-      "fetchedAt": "2026-02-07T13:45:56.727Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.119Z"
     },
     {
       "id": "2026chriscraftlaunch35gt-startingat595440",
@@ -503,7 +558,8 @@
       "currentPrice": "Starting at $595,440",
       "savings": "",
       "status": "order available8",
-      "fetchedAt": "2026-02-07T13:45:56.728Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.119Z"
     },
     {
       "id": "2026chriscraftsportster25-clickforaquote",
@@ -512,7 +568,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available4",
-      "fetchedAt": "2026-02-07T13:45:56.728Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.120Z"
     },
     {
       "id": "2026chriscraftsportster28-clickforaquote",
@@ -521,7 +578,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING4",
-      "fetchedAt": "2026-02-07T13:45:56.729Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.120Z"
     },
     {
       "id": "2026harriscruiser210sl-clickforaquote",
@@ -530,7 +588,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:56.729Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.121Z"
     },
     {
       "id": "2026harriscruiser210sl-ourprice59995",
@@ -539,7 +598,8 @@
       "currentPrice": "Our Price   \n                    \n                        $59,995",
       "savings": "Savings\n                   \n                    $4,268",
       "status": "Sale Pending44",
-      "fetchedAt": "2026-02-07T13:45:56.730Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.122Z"
     },
     {
       "id": "2026harriscruiser210sl-ourprice48109",
@@ -548,7 +608,8 @@
       "currentPrice": "Our Price   \n                    \n                        $48,109",
       "savings": "",
       "status": "just arrived!",
-      "fetchedAt": "2026-02-07T13:45:56.730Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.122Z"
     },
     {
       "id": "2026harriscruiser210sl-ourprice47958",
@@ -557,7 +618,8 @@
       "currentPrice": "Our Price   \n                    \n                        $47,958",
       "savings": "",
       "status": "Available30",
-      "fetchedAt": "2026-02-07T13:45:56.731Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.123Z"
     },
     {
       "id": "2026harriscruiser230cwdh-clickforaquote",
@@ -566,7 +628,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Sale Pending47",
-      "fetchedAt": "2026-02-07T13:45:56.731Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.124Z"
     },
     {
       "id": "2026harriscruiser230sl-ourprice49146",
@@ -575,7 +638,8 @@
       "currentPrice": "Our Price   \n                    \n                        $49,146",
       "savings": "",
       "status": "Available33",
-      "fetchedAt": "2026-02-07T13:45:56.732Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.124Z"
     },
     {
       "id": "2026harriscruiser230sldh-ourprice73995",
@@ -584,7 +648,8 @@
       "currentPrice": "Our Price   \n                    \n                        $73,995",
       "savings": "Savings\n                   \n                    $2,851",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:45:56.732Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.125Z"
     },
     {
       "id": "2026harrisgrandmariner230sldh-clickforaquote",
@@ -593,7 +658,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!65",
-      "fetchedAt": "2026-02-07T13:45:56.733Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.125Z"
     },
     {
       "id": "2026harrissunliner230sl-clickforaquote",
@@ -602,7 +668,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING",
-      "fetchedAt": "2026-02-07T13:45:56.733Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.126Z"
     },
     {
       "id": "2026harrissunliner230sldh-clickforaquote",
@@ -611,7 +678,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Sale Pending",
-      "fetchedAt": "2026-02-07T13:45:56.734Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.126Z"
     },
     {
       "id": "2026harrissunliner230sle-clickforaquote",
@@ -620,7 +688,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!7",
-      "fetchedAt": "2026-02-07T13:45:56.735Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.127Z"
     },
     {
       "id": "2026mastercraftnxt22-clickforaquote",
@@ -629,7 +698,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING1",
-      "fetchedAt": "2026-02-07T13:45:56.735Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.127Z"
     },
     {
       "id": "2026mastercraftnxt23-clickforaquote",
@@ -638,7 +708,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!",
-      "fetchedAt": "2026-02-07T13:45:56.736Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.128Z"
     },
     {
       "id": "2026mastercraftnxt24-clickforaquote",
@@ -647,7 +718,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "order available6",
-      "fetchedAt": "2026-02-07T13:45:56.736Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.128Z"
     },
     {
       "id": "2026mastercraftprostar-clickforaquote",
@@ -656,7 +728,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "order available5",
-      "fetchedAt": "2026-02-07T13:45:56.736Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.129Z"
     },
     {
       "id": "2026mastercraftx24-clickforaquote",
@@ -665,7 +738,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!1",
-      "fetchedAt": "2026-02-07T13:45:56.737Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.129Z"
     },
     {
       "id": "2026mastercraftxstar23-clickforaquote",
@@ -674,7 +748,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "order available7",
-      "fetchedAt": "2026-02-07T13:45:56.737Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.130Z"
     },
     {
       "id": "2026mastercraftxt22-clickforaquote",
@@ -683,7 +758,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "5",
-      "fetchedAt": "2026-02-07T13:45:56.738Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.130Z"
     },
     {
       "id": "2026mastercraftxt24-clickforaquote",
@@ -692,7 +768,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING1",
-      "fetchedAt": "2026-02-07T13:45:56.739Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.131Z"
     },
     {
       "id": "2026searaysdx230-clickforaquote",
@@ -701,7 +778,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!62",
-      "fetchedAt": "2026-02-07T13:45:56.739Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.131Z"
     },
     {
       "id": "2026searaysdx230outboard-clickforaquote",
@@ -710,7 +788,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available45",
-      "fetchedAt": "2026-02-07T13:45:56.741Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.133Z"
     },
     {
       "id": "2026searaysdx250-clickforaquote",
@@ -719,7 +798,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!1",
-      "fetchedAt": "2026-02-07T13:45:56.741Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.133Z"
     },
     {
       "id": "2026searaysdx250outboard-clickforaquote",
@@ -728,7 +808,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!48",
-      "fetchedAt": "2026-02-07T13:45:56.742Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.134Z"
     },
     {
       "id": "2026searaysdx270-clickforaquote",
@@ -737,7 +818,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!1",
-      "fetchedAt": "2026-02-07T13:45:56.742Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.134Z"
     },
     {
       "id": "2026searaysdx290-clickforaquote",
@@ -746,7 +828,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!",
-      "fetchedAt": "2026-02-07T13:45:56.743Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.135Z"
     },
     {
       "id": "2026searayslx260-clickforaquote",
@@ -755,7 +838,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "On Order1",
-      "fetchedAt": "2026-02-07T13:45:56.743Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.135Z"
     },
     {
       "id": "2026searayslx280-startingat208300",
@@ -764,7 +848,8 @@
       "currentPrice": "Starting at $208,300",
       "savings": "",
       "status": "order available20",
-      "fetchedAt": "2026-02-07T13:45:56.743Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.136Z"
     },
     {
       "id": "2026searayslx310-startingat371900",
@@ -773,7 +858,8 @@
       "currentPrice": "Starting at $371,900",
       "savings": "",
       "status": "order available10",
-      "fetchedAt": "2026-02-07T13:45:56.744Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.136Z"
     },
     {
       "id": "2026searayslx350-startingat427100",
@@ -782,7 +868,8 @@
       "currentPrice": "Starting at $427,100",
       "savings": "",
       "status": "order available18",
-      "fetchedAt": "2026-02-07T13:45:56.745Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.137Z"
     },
     {
       "id": "2026searayslx360ob-clickforaquote",
@@ -791,7 +878,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "order available1",
-      "fetchedAt": "2026-02-07T13:45:56.745Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.137Z"
     },
     {
       "id": "2026searayslx400-startingat832600",
@@ -800,7 +888,8 @@
       "currentPrice": "Starting at $832,600",
       "savings": "",
       "status": "order available13",
-      "fetchedAt": "2026-02-07T13:45:56.745Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.138Z"
     },
     {
       "id": "2026searayspx210-clickforaquote",
@@ -809,7 +898,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!1",
-      "fetchedAt": "2026-02-07T13:45:56.746Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.138Z"
     },
     {
       "id": "2026searayspx210-ourprice79660",
@@ -818,7 +908,8 @@
       "currentPrice": "Our Price   \n                    \n                        $79,660",
       "savings": "",
       "status": "just arrived!1",
-      "fetchedAt": "2026-02-07T13:45:56.746Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.139Z"
     },
     {
       "id": "2026searayspx210outboard-ourprice92760",
@@ -827,7 +918,8 @@
       "currentPrice": "Our Price   \n                    \n                        $92,760",
       "savings": "",
       "status": "Available40",
-      "fetchedAt": "2026-02-07T13:45:56.747Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.140Z"
     },
     {
       "id": "2026searaysundancer320-clickforaquote",
@@ -836,7 +928,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "just arrived!107",
-      "fetchedAt": "2026-02-07T13:45:56.748Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.140Z"
     },
     {
       "id": "2026searaysundancer370-startingat859900",
@@ -845,7 +938,8 @@
       "currentPrice": "Starting at $859,900",
       "savings": "",
       "status": "order available15",
-      "fetchedAt": "2026-02-07T13:45:56.748Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.141Z"
     },
     {
       "id": "2026sportsmanheritage231-ourprice119999",
@@ -854,7 +948,8 @@
       "currentPrice": "Our Price   \n                    \n                        $119,999",
       "savings": "Savings\n                   \n                    $47,803",
       "status": "Available106",
-      "fetchedAt": "2026-02-07T13:45:56.749Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.141Z"
     },
     {
       "id": "2026sportsmanheritage261-ourprice211995",
@@ -863,7 +958,8 @@
       "currentPrice": "Our Price   \n                    \n                        $211,995",
       "savings": "Savings\n                   \n                    $73,371",
       "status": "just arrived!",
-      "fetchedAt": "2026-02-07T13:45:56.749Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.142Z"
     },
     {
       "id": "2026sportsmanheritage321-startingat366535",
@@ -872,7 +968,8 @@
       "currentPrice": "Starting at $366,535",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:45:56.750Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:20.142Z"
     },
     {
       "id": "2026sportsmanmasters227-clickforaquote",
@@ -881,7 +978,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING",
-      "fetchedAt": "2026-02-07T13:46:00.057Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.436Z"
     },
     {
       "id": "2026sportsmanmasters247-startingat109190",
@@ -890,7 +988,8 @@
       "currentPrice": "Starting at $109,190",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.058Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.437Z"
     },
     {
       "id": "2026sportsmanopen212-startingat89830",
@@ -899,7 +998,8 @@
       "currentPrice": "Starting at $89,830",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.058Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.437Z"
     },
     {
       "id": "2026sportsmanopen232-startingat100840",
@@ -908,7 +1008,8 @@
       "currentPrice": "Starting at $100,840",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.059Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.438Z"
     },
     {
       "id": "2026sportsmanopen262-startingat180425",
@@ -917,7 +1018,8 @@
       "currentPrice": "Starting at $180,425",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.059Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.438Z"
     },
     {
       "id": "2026sportsmanopen282-clickforaquote",
@@ -926,7 +1028,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "On Order",
-      "fetchedAt": "2026-02-07T13:46:00.059Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.439Z"
     },
     {
       "id": "2026sportsmanopen302-startingat306090",
@@ -935,7 +1038,8 @@
       "currentPrice": "Starting at $306,090",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.060Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.440Z"
     },
     {
       "id": "2026sportsmanopen322-startingat360425",
@@ -944,7 +1048,8 @@
       "currentPrice": "Starting at $360,425",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.060Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.440Z"
     },
     {
       "id": "2026sportsmanopen352-startingat485465",
@@ -953,7 +1058,8 @@
       "currentPrice": "Starting at $485,465",
       "savings": "",
       "status": "order available",
-      "fetchedAt": "2026-02-07T13:46:00.061Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.441Z"
     },
     {
       "id": "2026sportsmanopen402-startingat857990",
@@ -962,7 +1068,8 @@
       "currentPrice": "Starting at $857,990",
       "savings": "",
       "status": "order available3",
-      "fetchedAt": "2026-02-07T13:46:00.061Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.442Z"
     },
     {
       "id": "2025barlettaboatsa22qc-ourprice49995",
@@ -971,7 +1078,8 @@
       "currentPrice": "Our Price   \n                    \n                        $49,995",
       "savings": "",
       "status": "Available26",
-      "fetchedAt": "2026-02-07T13:46:00.062Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.442Z"
     },
     {
       "id": "2025barlettaboatsa24qc-ourprice46995",
@@ -980,7 +1088,8 @@
       "currentPrice": "Our Price   \n                    \n                        $46,995",
       "savings": "",
       "status": "Available28",
-      "fetchedAt": "2026-02-07T13:46:00.063Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.448Z"
     },
     {
       "id": "2025chriscraftlaunch27-callfornextavailable",
@@ -989,7 +1098,8 @@
       "currentPrice": "CALL FOR NEXT AVAILABLE",
       "savings": "",
       "status": "Sold",
-      "fetchedAt": "2026-02-07T13:46:00.070Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.450Z"
     },
     {
       "id": "2024mastercraftxt24-ourprice175000",
@@ -998,7 +1108,8 @@
       "currentPrice": "Our Price   \n                    \n                        $175,000",
       "savings": "",
       "status": "INCOMING31",
-      "fetchedAt": "2026-02-07T13:46:00.071Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.450Z"
     },
     {
       "id": "2023fourwinnsh4-clickforaquote",
@@ -1007,7 +1118,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available32",
-      "fetchedAt": "2026-02-07T13:46:00.071Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.451Z"
     },
     {
       "id": "2023mastercraftnxt20-ourprice89998",
@@ -1016,7 +1128,8 @@
       "currentPrice": "Our Price   \n                    \n                        $89,998",
       "savings": "",
       "status": "Sale Pending1",
-      "fetchedAt": "2026-02-07T13:46:00.072Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.451Z"
     },
     {
       "id": "2022barlettaboats21uc-ourprice57995",
@@ -1025,7 +1138,8 @@
       "currentPrice": "Our Price   \n                    \n                        $57,995",
       "savings": "",
       "status": "Available26",
-      "fetchedAt": "2026-02-07T13:46:00.073Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.452Z"
     },
     {
       "id": "2022baylinervr5bowrider-clickforaquote",
@@ -1034,7 +1148,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available17",
-      "fetchedAt": "2026-02-07T13:46:00.074Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.452Z"
     },
     {
       "id": "2022mastercraftnxt22-ourprice99995",
@@ -1043,7 +1158,8 @@
       "currentPrice": "Our Price   \n                    \n                        $99,995",
       "savings": "",
       "status": "Available29",
-      "fetchedAt": "2026-02-07T13:46:00.074Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.453Z"
     },
     {
       "id": "2021searayslx250-ourprice94995",
@@ -1052,7 +1168,8 @@
       "currentPrice": "Our Price   \n                    \n                        $94,995",
       "savings": "",
       "status": "Available41",
-      "fetchedAt": "2026-02-07T13:46:00.075Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.453Z"
     },
     {
       "id": "2020mastercraftxt23-ourprice87995",
@@ -1061,7 +1178,8 @@
       "currentPrice": "Our Price   \n                    \n                        $87,995",
       "savings": "Savings\n                   \n                    $4,804",
       "status": "Reduced Price36",
-      "fetchedAt": "2026-02-07T13:46:00.076Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.454Z"
     },
     {
       "id": "2020yamahamarinear190-clickforaquote",
@@ -1070,7 +1188,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available13",
-      "fetchedAt": "2026-02-07T13:46:00.076Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.455Z"
     },
     {
       "id": "2019mastercraftx24-ourprice134970",
@@ -1079,7 +1198,8 @@
       "currentPrice": "Our Price   \n                    \n                        $134,970",
       "savings": "Savings\n                   \n                    $5,025",
       "status": "Reduced Price48",
-      "fetchedAt": "2026-02-07T13:46:00.077Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.455Z"
     },
     {
       "id": "2018harrissunliner2402-27-ourprice23495",
@@ -1088,7 +1208,8 @@
       "currentPrice": "Our Price   \n                    \n                        $23,495",
       "savings": "",
       "status": "Sale Pending41",
-      "fetchedAt": "2026-02-07T13:46:00.077Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.455Z"
     },
     {
       "id": "2018trackerboatsproteam190tx-ourprice18995",
@@ -1097,7 +1218,8 @@
       "currentPrice": "Our Price   \n                    \n                        $18,995",
       "savings": "",
       "status": "Available19",
-      "fetchedAt": "2026-02-07T13:46:00.078Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.456Z"
     },
     {
       "id": "2017qwestpontoonsavanti823-clickforaquote",
@@ -1106,7 +1228,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available7",
-      "fetchedAt": "2026-02-07T13:46:00.078Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.456Z"
     },
     {
       "id": "2014harriscruiser200-ourprice19998",
@@ -1115,7 +1238,8 @@
       "currentPrice": "Our Price   \n                    \n                        $19,998",
       "savings": "",
       "status": "Available26",
-      "fetchedAt": "2026-02-07T13:46:00.079Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.457Z"
     },
     {
       "id": "2014harriscruiser220-ourprice18999",
@@ -1124,7 +1248,8 @@
       "currentPrice": "Our Price   \n                    \n                        $18,999",
       "savings": "",
       "status": "Available5",
-      "fetchedAt": "2026-02-07T13:46:00.079Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.457Z"
     },
     {
       "id": "2014hurricaness188io-clickforaquote",
@@ -1133,7 +1258,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "INCOMING19",
-      "fetchedAt": "2026-02-07T13:46:00.079Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.458Z"
     },
     {
       "id": "2014nitrozseriesz-7-ourprice24995",
@@ -1142,7 +1268,8 @@
       "currentPrice": "Our Price   \n                    \n                        $24,995",
       "savings": "",
       "status": "Available",
-      "fetchedAt": "2026-02-07T13:46:00.080Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.458Z"
     },
     {
       "id": "2014yamahamarinear240highoutputwithpaintedtrailer-ourprice33799",
@@ -1151,7 +1278,8 @@
       "currentPrice": "Our Price   \n                    \n                        $33,799",
       "savings": "",
       "status": "Available29",
-      "fetchedAt": "2026-02-07T13:46:00.080Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.459Z"
     },
     {
       "id": "2013chaparralsunesta224-clickforaquote",
@@ -1160,7 +1288,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Pre-Auction!16",
-      "fetchedAt": "2026-02-07T13:46:00.081Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.460Z"
     },
     {
       "id": "2013fourwinnshorizonseriesh190-ourprice19995",
@@ -1169,7 +1298,8 @@
       "currentPrice": "Our Price   \n                    \n                        $19,995",
       "savings": "",
       "status": "Available19",
-      "fetchedAt": "2026-02-07T13:46:00.081Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.460Z"
     },
     {
       "id": "2013regal2000-clickforaquote",
@@ -1178,7 +1308,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available30",
-      "fetchedAt": "2026-02-07T13:46:00.082Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.461Z"
     },
     {
       "id": "2013sunchaserclassic8524lr-ourprice19995",
@@ -1187,7 +1318,8 @@
       "currentPrice": "Our Price   \n                    \n                        $19,995",
       "savings": "",
       "status": "Available22",
-      "fetchedAt": "2026-02-07T13:46:00.082Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.461Z"
     },
     {
       "id": "2011rangerz520-ourprice34995",
@@ -1196,7 +1328,8 @@
       "currentPrice": "Our Price   \n                    \n                        $34,995",
       "savings": "",
       "status": "LOADED!9",
-      "fetchedAt": "2026-02-07T13:46:00.083Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.462Z"
     },
     {
       "id": "2010bennington2075gli-ourprice19795",
@@ -1205,7 +1338,8 @@
       "currentPrice": "Our Price   \n                    \n                        $19,795",
       "savings": "",
       "status": "Available21",
-      "fetchedAt": "2026-02-07T13:46:00.083Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.462Z"
     },
     {
       "id": "2010monterey180fs-clickforaquote",
@@ -1214,7 +1348,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available21",
-      "fetchedAt": "2026-02-07T13:46:00.084Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.463Z"
     },
     {
       "id": "2007princecraftvision23l-ourprice11995",
@@ -1223,7 +1358,8 @@
       "currentPrice": "Our Price   \n                    \n                        $11,995",
       "savings": "Savings\n                   \n                    $2,000",
       "status": "Reduced Price17",
-      "fetchedAt": "2026-02-07T13:46:00.084Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.463Z"
     },
     {
       "id": "2007stingray185lslx-ourprice11998",
@@ -1232,7 +1368,8 @@
       "currentPrice": "Our Price   \n                    \n                        $11,998",
       "savings": "",
       "status": "Available24",
-      "fetchedAt": "2026-02-07T13:46:00.085Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.464Z"
     },
     {
       "id": "2005bayliner212cu-clickforaquote",
@@ -1241,7 +1378,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available22",
-      "fetchedAt": "2026-02-07T13:46:00.085Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.465Z"
     },
     {
       "id": "2005crowline275ccr-ourprice34995",
@@ -1250,7 +1388,8 @@
       "currentPrice": "Our Price   \n                    \n                        $34,995",
       "savings": "",
       "status": "Pre-Auction!27",
-      "fetchedAt": "2026-02-07T13:46:00.085Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.465Z"
     },
     {
       "id": "2005mastercraftx9-ourprice22995",
@@ -1259,7 +1398,8 @@
       "currentPrice": "Our Price   \n                    \n                        $22,995",
       "savings": "",
       "status": "Pre-Auction!28",
-      "fetchedAt": "2026-02-07T13:46:00.086Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.466Z"
     },
     {
       "id": "2000baylinercapri2050ls-ourprice6995",
@@ -1268,7 +1408,8 @@
       "currentPrice": "Our Price   \n                    \n                        $6,995",
       "savings": "",
       "status": "Pre-Auction!18",
-      "fetchedAt": "2026-02-07T13:46:00.086Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.466Z"
     },
     {
       "id": "1999cobalt226-ourprice13995",
@@ -1277,7 +1418,8 @@
       "currentPrice": "Our Price   \n                    \n                        $13,995",
       "savings": "Savings\n                   \n                    $2,003",
       "status": "PreAuction!19",
-      "fetchedAt": "2026-02-07T13:46:00.087Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.467Z"
     },
     {
       "id": "1998cobalt232-ourprice10795",
@@ -1286,7 +1428,8 @@
       "currentPrice": "Our Price   \n                    \n                        $10,795",
       "savings": "",
       "status": "Pre-Auction!3",
-      "fetchedAt": "2026-02-07T13:46:00.087Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.467Z"
     },
     {
       "id": "1998donzi235sd-ourprice9995",
@@ -1295,7 +1438,8 @@
       "currentPrice": "Our Price   \n                    \n                        $9,995",
       "savings": "",
       "status": "Available47",
-      "fetchedAt": "2026-02-07T13:46:00.088Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.468Z"
     },
     {
       "id": "1987searayseville190-clickforaquote",
@@ -1304,7 +1448,8 @@
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available48",
-      "fetchedAt": "2026-02-07T13:46:00.088Z"
+      "vehicleImageHref": null,
+      "fetchedAt": "2026-02-07T18:49:24.468Z"
     }
   ]
 }
