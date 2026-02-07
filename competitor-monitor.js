@@ -4,6 +4,9 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 
+// ============================================
+// CONFIGURATION
+// ============================================
 // Mark's Leisure Time Marine configuration
 const MARKS_CONFIG = {
   name: "Mark's Leisure Time Marine",
@@ -15,11 +18,15 @@ const MARKS_CONFIG = {
     link: 'a.vehicle-heading__link',
     price: 'span.vehicle-price.vehicle-price--current',
     savings: 'span.vehicle-price.vehicle-price--savings',
-    status: 'span.vehicle-image__overlay-content span.vehicle-image__overlay-text'
+    status: 'span.vehicle-image__overlay-content span.vehicle-image__overlay-text',
+    // New selectors for pagination detection
+    totalResults: 'div.v7list-subheader__result-text span'
   }
 };
 
-// Database setup
+// ============================================
+// DATABASE SETUP
+// ============================================
 const DATA_DIR = path.join(__dirname, 'data');
 const DB_FILE = path.join(DATA_DIR, 'inventory.json');
 
@@ -28,7 +35,10 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-// Initialize database if it doesn't exist
+/**
+ * Initialize database if it doesn't exist
+ * Creates a fresh inventory.json with empty structure
+ */
 function initDatabase() {
   if (!fs.existsSync(DB_FILE)) {
     const initialData = {
@@ -39,7 +49,10 @@ function initDatabase() {
   }
 }
 
-// Get database
+/**
+ * Get database contents
+ * Returns the current inventory data from inventory.json
+ */
 function getDatabase() {
   try {
     return JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
@@ -49,17 +62,33 @@ function getDatabase() {
   }
 }
 
-// Save database
+/**
+ * Save database contents
+ * Writes the updated inventory data back to inventory.json
+ * This completely REPLACES the file content - no appending
+ */
 function saveDatabase(data) {
   fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 }
 
-// Create unique boat ID
+// ============================================
+// BOAT PARSING FUNCTIONS
+// ============================================
+
+/**
+ * Create unique boat ID
+ * Combines title and price to create a unique identifier
+ * Example: "2024 Lund 1650 Angler - $25,999" becomes "2024lund1650angler25999"
+ */
 function getBoatId(title, price) {
   return `${title}-${price}`.replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
 }
 
-// Parse individual boat card
+/**
+ * Parse individual boat card from HTML
+ * Extracts all boat details from a single article element
+ * Returns a boat object with id, title, link, price, etc.
+ */
 function parseBoat($, boatElement) {
   try {
     const $boat = cheerio.load(boatElement);
@@ -87,7 +116,48 @@ function parseBoat($, boatElement) {
   }
 }
 
-// Fetch a single page of Mark's boats
+/**
+ * Extract total results count from page
+ * Looks for "Showing 1-50 of 110 results" and extracts the 110
+ * Returns null if not found
+ */
+function getTotalResults($) {
+  try {
+    // Find the div with class v7list-subheader__result-text
+    const resultText = $('div.v7list-subheader__result-text');
+    
+    // Get all span elements inside it
+    const spans = resultText.find('span');
+    
+    // The second span contains the total count
+    // Example: <span>101-110</span> of <span>110</span>
+    if (spans.length >= 2) {
+      const totalText = $(spans[1]).text().trim();
+      const total = parseInt(totalText, 10);
+      
+      if (!isNaN(total)) {
+        console.log(`📊 Total results found: ${total}`);
+        return total;
+      }
+    }
+    
+    console.warn('⚠️ Could not parse total results from page');
+    return null;
+  } catch (error) {
+    console.error('Error extracting total results:', error.message);
+    return null;
+  }
+}
+
+// ============================================
+// PAGE FETCHING FUNCTIONS
+// ============================================
+
+/**
+ * Fetch a single page of Mark's boats
+ * Makes HTTP request to specified page number
+ * Returns array of boat objects found on that page
+ */
 async function fetchPage(pageNum) {
   try {
     const url = `https://www.marksleisuretimemarine.com/new-boats-for-sale-conesus-canandaigua-new-york--inventory?condition=new&condition=pre-owned&pg=${pageNum}&sz=50`;
@@ -107,7 +177,7 @@ async function fetchPage(pageNum) {
     
     if ($container.length === 0) {
       console.warn(`⚠️ Parent container not found on page ${pageNum}`);
-      return boats;
+      return { boats: [], $ };
     }
     
     $container.find(MARKS_CONFIG.selectors.boatCard).each((idx, boatEl) => {
@@ -118,40 +188,126 @@ async function fetchPage(pageNum) {
     });
     
     console.log(`✅ Found ${boats.length} boats on page ${pageNum}`);
-    return boats;
+    
+    // Return both boats and the cheerio object for pagination info extraction
+    return { boats, $ };
     
   } catch (error) {
     console.error(`❌ Error fetching page ${pageNum}:`, error.message);
-    return [];
+    return { boats: [], $: null };
   }
 }
 
-// Fetch all pages of Mark's boats
+/**
+ * Fetch all pages of Mark's boats with multiple safety mechanisms
+ * 
+ * SAFETY MECHANISM #1: Calculate exact pages needed from total results
+ * SAFETY MECHANISM #2: Track seen boat IDs to prevent duplicates
+ * SAFETY MECHANISM #3: Maximum page limit of 20 as final failsafe
+ * 
+ * This prevents the infinite loop issue where page 7+ redirects to page 6
+ */
 async function fetchAllPages() {
   try {
-    console.log(`Fetching all pages for ${MARKS_CONFIG.name}...`);
+    console.log(`\n🚤 Fetching all pages for ${MARKS_CONFIG.name}...`);
+    
+    // SAFETY MECHANISM #3: Hard limit - never fetch more than 20 pages
+    const MAX_PAGES = 20;
+    
     let allBoats = [];
-    let pageNum = 1;
-    let hasMorePages = true;
-
-    while (hasMorePages) {
-      const pageBoats = await fetchPage(pageNum);
+    let seenBoatIds = new Set(); // SAFETY MECHANISM #2: Track IDs we've seen
+    
+    // ============================================
+    // STEP 1: Fetch page 1 to get total results
+    // ============================================
+    console.log('\n📊 Fetching page 1 to determine total pages...');
+    const firstPage = await fetchPage(1);
+    
+    if (firstPage.boats.length === 0) {
+      console.warn('⚠️ No boats found on page 1');
+      return [];
+    }
+    
+    // Add page 1 boats to our collection
+    firstPage.boats.forEach(boat => {
+      if (!seenBoatIds.has(boat.id)) {
+        allBoats.push(boat);
+        seenBoatIds.add(boat.id);
+      }
+    });
+    
+    // ============================================
+    // STEP 2: Calculate total pages needed
+    // ============================================
+    // SAFETY MECHANISM #1: Get exact page count from total results
+    let totalPages = 1; // Default to 1 if we can't determine
+    
+    if (firstPage.$) {
+      const totalResults = getTotalResults(firstPage.$);
       
-      if (pageBoats.length === 0) {
-        hasMorePages = false;
-      } else {
-        allBoats = allBoats.concat(pageBoats);
+      if (totalResults) {
+        // Calculate pages: 110 results / 50 per page = 2.2 = 3 pages
+        totalPages = Math.ceil(totalResults / 50);
+        console.log(`✅ Calculated ${totalPages} total pages (${totalResults} results / 50 per page)`);
         
-        // If we got fewer than 50 boats, this is the last page
-        if (pageBoats.length < 50) {
-          hasMorePages = false;
-        } else {
-          pageNum++;
+        // Apply hard limit
+        if (totalPages > MAX_PAGES) {
+          console.warn(`⚠️ Calculated pages (${totalPages}) exceeds max limit (${MAX_PAGES}), capping at ${MAX_PAGES}`);
+          totalPages = MAX_PAGES;
+        }
+      } else {
+        console.warn('⚠️ Could not determine total pages, will use fallback method');
+      }
+    }
+    
+    // ============================================
+    // STEP 3: Fetch remaining pages
+    // ============================================
+    console.log(`\n📥 Fetching pages 2-${totalPages}...`);
+    
+    // If we successfully got total pages, fetch exactly that many
+    if (totalPages > 1) {
+      for (let pageNum = 2; pageNum <= totalPages; pageNum++) {
+        const pageData = await fetchPage(pageNum);
+        const pageBoats = pageData.boats;
+        
+        if (pageBoats.length === 0) {
+          console.log(`⚠️ Page ${pageNum} returned 0 boats, stopping pagination`);
+          break;
+        }
+        
+        // SAFETY MECHANISM #2: Check for duplicates before adding
+        let newBoatsCount = 0;
+        let duplicatesCount = 0;
+        
+        pageBoats.forEach(boat => {
+          if (!seenBoatIds.has(boat.id)) {
+            allBoats.push(boat);
+            seenBoatIds.add(boat.id);
+            newBoatsCount++;
+          } else {
+            duplicatesCount++;
+          }
+        });
+        
+        console.log(`   📦 Page ${pageNum}: ${newBoatsCount} new boats, ${duplicatesCount} duplicates`);
+        
+        // If ALL boats on this page were duplicates, we've hit the redirect issue
+        if (duplicatesCount === pageBoats.length && duplicatesCount > 0) {
+          console.warn(`⚠️ All boats on page ${pageNum} were duplicates - stopping (likely hit redirect)`);
+          break;
         }
       }
     }
     
-    console.log(`✅ Total boats found across all pages: ${allBoats.length}`);
+    // ============================================
+    // STEP 4: Final summary
+    // ============================================
+    console.log(`\n✅ Fetching complete:`);
+    console.log(`   📊 Total unique boats: ${allBoats.length}`);
+    console.log(`   📄 Pages fetched: ${Math.min(totalPages, MAX_PAGES)}`);
+    console.log(`   🔒 Duplicate prevention: ${seenBoatIds.size} unique IDs tracked`);
+    
     return allBoats;
     
   } catch (error) {
@@ -160,7 +316,15 @@ async function fetchAllPages() {
   }
 }
 
-// Detect changes between old and new data
+// ============================================
+// CHANGE DETECTION FUNCTIONS
+// ============================================
+
+/**
+ * Detect changes between old and new inventory data
+ * Compares previous inventory with current scrape
+ * Returns object with added, removed, and priceChanges arrays
+ */
 function detectChanges(oldBoats, newBoats) {
   const changes = {
     added: [],
@@ -168,29 +332,31 @@ function detectChanges(oldBoats, newBoats) {
     priceChanges: []
   };
 
+  // If no old data exists, everything is "new"
   if (!oldBoats || oldBoats.length === 0) {
     changes.added = newBoats;
     return changes;
   }
 
+  // Create maps for efficient lookup by boat ID
   const oldMap = new Map(oldBoats.map(b => [b.id, b]));
   const newMap = new Map(newBoats.map(b => [b.id, b]));
 
-  // Find added boats
+  // Find added boats (in new but not in old)
   newBoats.forEach(boat => {
     if (!oldMap.has(boat.id)) {
       changes.added.push(boat);
     }
   });
 
-  // Find removed boats
+  // Find removed boats (in old but not in new)
   oldBoats.forEach(boat => {
     if (!newMap.has(boat.id)) {
       changes.removed.push(boat);
     }
   });
 
-  // Find price changes
+  // Find price changes (same boat ID, different price)
   newBoats.forEach(newBoat => {
     const oldBoat = oldMap.get(newBoat.id);
     if (oldBoat && oldBoat.currentPrice !== newBoat.currentPrice) {
@@ -206,13 +372,21 @@ function detectChanges(oldBoats, newBoats) {
   return changes;
 }
 
-// Build HTML email
+// ============================================
+// EMAIL FUNCTIONS
+// ============================================
+
+/**
+ * Build HTML email content from detected changes
+ * Creates a formatted email showing added, removed, and price changed boats
+ */
 function buildEmailHTML(changes) {
   let html = `
     <h2 style="color: #0066cc;">🚤 ${MARKS_CONFIG.name}</h2>
     <p style="font-size: 14px; color: #666;">Update detected at ${new Date().toLocaleString()}</p>
   `;
 
+  // Added boats section
   if (changes.added.length > 0) {
     html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
     changes.added.forEach(boat => {
@@ -235,6 +409,7 @@ function buildEmailHTML(changes) {
     });
   }
 
+  // Removed boats section
   if (changes.removed.length > 0) {
     html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
     changes.removed.forEach(boat => {
@@ -247,6 +422,7 @@ function buildEmailHTML(changes) {
     });
   }
 
+  // Price changes section
   if (changes.priceChanges.length > 0) {
     html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
     changes.priceChanges.forEach(change => {
@@ -268,7 +444,10 @@ function buildEmailHTML(changes) {
   return html;
 }
 
-// Send email via SendGrid
+/**
+ * Send email via SendGrid API
+ * Sends formatted HTML email with inventory changes
+ */
 async function sendEmail(htmlContent) {
   const sendgridApiKey = process.env.SENDGRID_API_KEY;
   const fromEmail = process.env.SENDGRID_FROM_EMAIL;
@@ -309,21 +488,43 @@ async function sendEmail(htmlContent) {
   }
 }
 
-// Main monitoring function
+// ============================================
+// MAIN MONITORING FUNCTION
+// ============================================
+
+/**
+ * Main monitoring function - orchestrates the entire process
+ * 
+ * FLOW:
+ * 1. Initialize database (create if doesn't exist)
+ * 2. Load previous inventory from database
+ * 3. Fetch current inventory from website (with safety mechanisms)
+ * 4. Detect changes (added/removed/price changes)
+ * 5. Send email if changes detected
+ * 6. REPLACE database with current inventory (not append!)
+ */
 async function monitor() {
   console.log('\n📊 Starting Mark\'s Leisure Time Marine monitoring...');
+  console.log('='.repeat(60));
+  
+  // Initialize database
   initDatabase();
 
+  // Load previous inventory
   const db = getDatabase();
   const oldBoats = db.marks || [];
+  console.log(`📚 Loaded ${oldBoats.length} boats from previous run`);
+
+  // Fetch current inventory (with all safety mechanisms)
   const newBoats = await fetchAllPages();
 
   // Detect changes
+  console.log('\n🔍 Detecting changes...');
   const changes = detectChanges(oldBoats, newBoats);
   const hasChanges = changes.added.length > 0 || changes.removed.length > 0 || changes.priceChanges.length > 0;
 
   if (hasChanges) {
-    console.log(`📢 Changes detected:`);
+    console.log(`\n📢 Changes detected:`);
     console.log(`   ✨ Added: ${changes.added.length}`);
     console.log(`   ❌ Removed: ${changes.removed.length}`);
     console.log(`   💰 Price Changes: ${changes.priceChanges.length}`);
@@ -334,13 +535,18 @@ async function monitor() {
     console.log('✅ No changes detected - skipping email');
   }
 
-  // Save current boats to database
-  db.marks = newBoats;
+  // IMPORTANT: Save REPLACES the entire marks array with newBoats
+  // This does NOT append - it completely overwrites the previous data
+  console.log(`\n💾 Saving ${newBoats.length} boats to database...`);
+  db.marks = newBoats; // COMPLETE REPLACEMENT, not appending
   db.lastUpdated = new Date().toISOString();
   saveDatabase(db);
 
-  console.log('✅ Monitor run completed');
+  console.log('='.repeat(60));
+  console.log('✅ Monitor run completed successfully\n');
 }
 
-// Run
+// ============================================
+// RUN THE MONITOR
+// ============================================
 monitor().catch(console.error);
