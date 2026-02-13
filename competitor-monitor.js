@@ -425,9 +425,9 @@ if (changes.added.length > 0) {
   html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
   changes.added.forEach(boat => {
     html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 0px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
         ${boat.vehicleImageHref ? `
-          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 0px; background:#efefef; flex-shrink: 0;" />
+          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
         ` : ''}
         <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">
@@ -453,9 +453,9 @@ if (changes.removed.length > 0) {
   html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
   changes.removed.forEach(boat => {
     html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 0px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
         ${boat.vehicleImageHref ? `
-          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 0px; background:#efefef; flex-shrink: 0;" />
+          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
         ` : ''}
         <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">${boat.title}</p>
@@ -471,9 +471,9 @@ if (changes.priceChanges.length > 0) {
   html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
   changes.priceChanges.forEach(change => {
     html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 0px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
         ${change.vehicleImageHref ? `
-          <img src="${change.vehicleImageHref}" alt="${change.title}" style="width: 120px; height: auto; border-radius: 0px; background:#efefef; flex-shrink: 0;" />
+          <img src="${change.vehicleImageHref}" alt="${change.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
         ` : ''}
         <div style="flex: 1;">
           <p style="margin: 5px 0; font-weight: bold;">
