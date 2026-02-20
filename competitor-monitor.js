@@ -2,6 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 // ============================================
@@ -421,86 +422,114 @@ function buildEmailHTML(changes, hasChanges = true) {
   }
 
   // Added boats section
-if (changes.added.length > 0) {
-  html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
-  changes.added.forEach(boat => {
-    html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
-        ${boat.vehicleImageHref ? `
-          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
-        ` : ''}
-        <div style="flex: 1;">
-          <p style="margin: 5px 0; font-weight: bold;">
-            <a href="${boat.link || '#'}" style="color: #0066cc; text-decoration: none; font-size: 15px;">
-              ${boat.title}
-            </a>
-          </p>
-          <p style="margin: 5px 0; font-size: 13px;">
-            <strong>Status:</strong> ${boat.status}
-          </p>
-          <p style="margin: 5px 0; font-size: 13px;">
-            <strong>Price:</strong> ${boat.currentPrice}
-            ${boat.savings ? ` | <strong>Savings:</strong> ${boat.savings}` : ''}
-          </p>
+  if (changes.added.length > 0) {
+    html += `<h3 style="color: #27ae60;">✨ Added (${changes.added.length})</h3>`;
+    changes.added.forEach(boat => {
+      html += `
+        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #27ae60; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+          ${boat.vehicleImageHref ? `
+            <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
+          ` : ''}
+          <div style="flex: 1;">
+            <p style="margin: 5px 0; font-weight: bold;">
+              <a href="${boat.link || '#'}" style="color: #0066cc; text-decoration: none; font-size: 15px;">
+                ${boat.title}
+              </a>
+            </p>
+            <p style="margin: 5px 0; font-size: 13px;">
+              <strong>Status:</strong> ${boat.status}
+            </p>
+            <p style="margin: 5px 0; font-size: 13px;">
+              <strong>Price:</strong> ${boat.currentPrice}
+              ${boat.savings ? ` | <strong>Savings:</strong> ${boat.savings}` : ''}
+            </p>
+          </div>
         </div>
-      </div>
-    `;
-  });
-}
+      `;
+    });
+  }
 
-// Removed boats section - also add images here
-if (changes.removed.length > 0) {
-  html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
-  changes.removed.forEach(boat => {
-    html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
-        ${boat.vehicleImageHref ? `
-          <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
-        ` : ''}
-        <div style="flex: 1;">
-          <p style="margin: 5px 0; font-weight: bold;">${boat.title}</p>
-          <p style="margin: 5px 0; font-size: 13px;">${boat.currentPrice}</p>
+  // Removed boats section
+  if (changes.removed.length > 0) {
+    html += `<h3 style="color: #e74c3c;">❌ Removed (${changes.removed.length})</h3>`;
+    changes.removed.forEach(boat => {
+      html += `
+        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #e74c3c; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+          ${boat.vehicleImageHref ? `
+            <img src="${boat.vehicleImageHref}" alt="${boat.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
+          ` : ''}
+          <div style="flex: 1;">
+            <p style="margin: 5px 0; font-weight: bold;">${boat.title}</p>
+            <p style="margin: 5px 0; font-size: 13px;">${boat.currentPrice}</p>
+          </div>
         </div>
-      </div>
-    `;
-  });
-}
+      `;
+    });
+  }
 
-// Price changes section - add images here too
-if (changes.priceChanges.length > 0) {
-  html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
-  changes.priceChanges.forEach(change => {
-    html += `
-      <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
-        ${change.vehicleImageHref ? `
-          <img src="${change.vehicleImageHref}" alt="${change.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
-        ` : ''}
-        <div style="flex: 1;">
-          <p style="margin: 5px 0; font-weight: bold;">
-            <a href="${change.link || '#'}" style="color: #0066cc; text-decoration: none;">
-              ${change.title}
-            </a>
-          </p>
-          <p style="margin: 5px 0; font-size: 13px;">
-            <strong style="color: #e74c3c;">${change.oldPrice}</strong> → <strong style="color: #27ae60;">${change.newPrice}</strong>
-          </p>
+  // Price changes section
+  if (changes.priceChanges.length > 0) {
+    html += `<h3 style="color: #f39c12;">💰 Price Changes (${changes.priceChanges.length})</h3>`;
+    changes.priceChanges.forEach(change => {
+      html += `
+        <div style="margin: 12px 0; padding: 12px; background: white; border-left: 4px solid #f39c12; border-radius: 0px 8px 8px 8px; background:#efefef; display: flex; align-items: flex-start; gap: 15px;">
+          ${change.vehicleImageHref ? `
+            <img src="${change.vehicleImageHref}" alt="${change.title}" style="width: 120px; height: auto; border-radius: 5px; background:#efefef; flex-shrink: 0; margin-right: 15px;" />
+          ` : ''}
+          <div style="flex: 1;">
+            <p style="margin: 5px 0; font-weight: bold;">
+              <a href="${change.link || '#'}" style="color: #0066cc; text-decoration: none;">
+                ${change.title}
+              </a>
+            </p>
+            <p style="margin: 5px 0; font-size: 13px;">
+              <strong style="color: #e74c3c;">${change.oldPrice}</strong> → <strong style="color: #27ae60;">${change.newPrice}</strong>
+            </p>
+          </div>
         </div>
-      </div>
-    `;
-  });
+      `;
+    });
+  }
+
+  return html;
 }
-  return html;  // ✅ Return the complete HTML
-}  // ✅ Close the function properly
 
 /**
- * Send email via SendGrid API
- * Sends formatted HTML email with inventory changes
+ * Send email via Gmail (nodemailer)
+ * SendGrid version commented out below - uncomment to switch back
  */
 async function sendEmail(htmlContent) {
-  const sendgridApiKey = process.env.SENDGRID_API_KEY;
-  const fromEmail = process.env.SENDGRID_FROM_EMAIL;
   const toEmail = process.env.SENDGRID_TO_EMAIL;
   const toEmail2 = process.env.SENDGRID_TO_EMAIL_2;
+
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS || !toEmail) {
+    console.warn('⚠️ Gmail credentials not configured, skipping email');
+    return;
+  }
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
+    }
+  });
+
+  try {
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: [toEmail, toEmail2].filter(Boolean).join(','),
+      subject: `🚤 Mark's Leisure Time Marine - Inventory Update`,
+      html: htmlContent
+    });
+    console.log('✅ Email sent successfully');
+  } catch (error) {
+    console.error('❌ Error sending email:', error.message);
+  }
+
+  /* --- SENDGRID (commented out) ---
+  const sendgridApiKey = process.env.SENDGRID_API_KEY;
+  const fromEmail = process.env.SENDGRID_FROM_EMAIL;
 
   if (!sendgridApiKey || !fromEmail || !toEmail) {
     console.warn('⚠️ SendGrid credentials not configured, skipping email');
@@ -515,12 +544,7 @@ async function sendEmail(htmlContent) {
       }
     ],
     from: { email: fromEmail },
-    content: [
-      {
-        type: 'text/html',
-        value: htmlContent
-      }
-    ]
+    content: [{ type: 'text/html', value: htmlContent }]
   };
 
   try {
@@ -534,6 +558,7 @@ async function sendEmail(htmlContent) {
   } catch (error) {
     console.error('❌ Error sending email:', error.message);
   }
+  --- END SENDGRID */
 }
 
 // ============================================
@@ -542,7 +567,7 @@ async function sendEmail(htmlContent) {
 
 /**
  * Main monitoring function - orchestrates the entire process
- * 
+ *
  * FLOW:
  * 1. Initialize database (create if doesn't exist)
  * 2. Load previous inventory from database
@@ -552,47 +577,49 @@ async function sendEmail(htmlContent) {
  * 6. REPLACE database with current inventory (not append!)
  */
 async function monitor() {
-  console.log('\n📊 Starting Mark\'s Leisure Time Marine monitoring...');
-  console.log('='.repeat(60));
-  
-  // Initialize database
+  console.log('📊 Starting Mark\'s Leisure Time Marine monitoring...');
+  console.log('============================================================');
+
+  // Step 1: Initialize and load database
   initDatabase();
-
-  // Load previous inventory
   const db = getDatabase();
-  const oldBoats = db.marks || [];
-  console.log(`📚 Loaded ${oldBoats.length} boats from previous run`);
+  const previousBoats = db.marks || [];
+  console.log(`📚 Loaded ${previousBoats.length} boats from previous run`);
 
-  // Fetch current inventory (with all safety mechanisms)
-  const newBoats = await fetchAllPages();
+  // Step 2: Fetch current inventory
+  const currentBoats = await fetchAllPages();
 
-  // Detect changes
+  if (currentBoats.length === 0) {
+    console.error('❌ No boats fetched, aborting to avoid data loss');
+    return;
+  }
+
+  // Step 3: Detect changes
   console.log('\n🔍 Detecting changes...');
-  const changes = detectChanges(oldBoats, newBoats);
+  const changes = detectChanges(previousBoats, currentBoats);
   const hasChanges = changes.added.length > 0 || changes.removed.length > 0 || changes.priceChanges.length > 0;
 
   if (hasChanges) {
-    console.log(`\n📢 Changes detected:`);
+    console.log('📢 Changes detected:');
     console.log(`   ✨ Added: ${changes.added.length}`);
     console.log(`   ❌ Removed: ${changes.removed.length}`);
     console.log(`   💰 Price Changes: ${changes.priceChanges.length}`);
   } else {
-    console.log('✅ No changes detected - but still sending confirmation email');
+    console.log('✅ No changes detected');
   }
-  
-  // Always send email (either with changes or confirmation message)
-  const emailHTML = buildEmailHTML(changes, hasChanges);
-  await sendEmail(emailHTML);
 
-  // IMPORTANT: Save REPLACES the entire marks array with newBoats
-  // This does NOT append - it completely overwrites the previous data
-  console.log(`\n💾 Saving ${newBoats.length} boats to database...`);
-  db.marks = newBoats; // COMPLETE REPLACEMENT, not appending
+  // Step 4: Send email
+  const htmlContent = buildEmailHTML(changes, hasChanges);
+  await sendEmail(htmlContent);
+
+  // Step 5: Save updated inventory
+  console.log(`💾 Saving ${currentBoats.length} boats to database...`);
+  db.marks = currentBoats;
   db.lastUpdated = new Date().toISOString();
   saveDatabase(db);
 
-  console.log('='.repeat(60));
-  console.log('✅ Monitor run completed successfully\n');
+  console.log('============================================================');
+  console.log('✅ Monitor run completed successfully');
 }
 
 // ============================================
