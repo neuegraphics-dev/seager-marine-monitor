@@ -1,1105 +1,775 @@
 {
-  "lastUpdated": "2026-08-14T14:17:07.694Z",
+  "lastUpdated": "2026-09-25T17:52:07.317Z",
   "marks": [
     {
-      "id": "2025searaysdx250surf-ourprice161281",
-      "title": "2025\nSea Ray \nSDX 250 Surf",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2025-Sea-Ray-Boat-SDX-250-Surf-Canandaigua-16218149?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $161,281",
-      "savings": "Savings\n                   \n                    $64,609",
-      "status": "Reduced Price",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/23/FD/23FD1045-AA00-4B58-B845-E6ED44CF4C39.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.397Z"
-    },
-    {
-      "id": "2025sportsmanopen252-ourprice149999",
-      "title": "2025\nSportsman \nOpen 252",
+      "id": "2025sportsmanopen252-ourprice138795",
+      "title": "2025\n\t\t    \t\t\t\t\t\t\tSportsman \n\t\t    \t\t\t\t\t\t\tOpen 252",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2025-Sportsman-Boat-Open-252-Canandaigua-16329576?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $149,999",
-      "savings": "Savings\n                   \n                    $71,171",
+      "currentPrice": "Our Price   \n                    \n                        $138,795",
+      "savings": "Savings\n                   \n                    $82,375",
       "status": "Reduced Price",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/9B/C9/9BC9A0C1-B688-4BFF-A9F4-D8AEAB479393.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.398Z"
+      "fetchedAt": "2026-09-25T17:52:04.617Z"
+    },
+    {
+      "id": "2027aleramarine22l-ourprice76995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tAlera Marine \n\t\t    \t\t\t\t\t\t\t22L",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Alera-Marine-Boat-22L-Syracuse-19149398?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $76,995",
+      "savings": "Savings\n                   \n                    $19,401",
+      "status": "just arrived!35",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/9A/ED/9AED032C-7096-474D-9943-DB27489C905E.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.618Z"
+    },
+    {
+      "id": "2027aleramarine22q-ourprice75995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tAlera Marine \n\t\t    \t\t\t\t\t\t\t22Q",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Alera-Marine-Boat-22Q-Syracuse-19149380?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $75,995",
+      "savings": "Savings\n                   \n                    $18,064",
+      "status": "just arrived!37",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/6C/69/6C6936C8-3B4A-422D-9F12-6A4062ACE583.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.619Z"
     },
     {
       "id": "2026chriscraftlaunch27-clickforaquote",
-      "title": "2026\nChris Craft \nLaunch 27",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tChris Craft \n\t\t    \t\t\t\t\t\t\tLaunch 27",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Launch-27-Canandaigua-18538997?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "NEW MODEL!77",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/6E/47/6E476837-EB84-4ACF-A02A-3AD8AE0944C8.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.399Z"
+      "fetchedAt": "2026-09-25T17:52:04.620Z"
     },
     {
       "id": "2026chriscraftlaunch28gt-ourprice379995",
-      "title": "2026\nChris Craft \nLaunch 28 GT",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Launch-28-GT-Syracuse-17972669?ref=list",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tChris Craft \n\t\t    \t\t\t\t\t\t\tLaunch 28 GT",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Launch-28-GT-Canandaigua-17972669?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $379,995",
       "savings": "Savings\n                   \n                    $37,723",
       "status": "Available60",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/DF/78/DF780DB8-030D-4D04-AFD2-5DAC30734D13.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.400Z"
+      "fetchedAt": "2026-09-25T17:52:04.620Z"
     },
     {
       "id": "2026chriscraftsportster28-ourprice232807",
-      "title": "2026\nChris Craft \nSportster 28",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tChris Craft \n\t\t    \t\t\t\t\t\t\tSportster 28",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Sportster-28-Canandaigua-17972733?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $232,807",
       "savings": "Savings\n                   \n                    $48,608",
       "status": "Available83",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/D9/85/D985BDC3-6F31-47E6-9E79-6A65D656A678.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.401Z"
+      "fetchedAt": "2026-09-25T17:52:04.621Z"
     },
     {
       "id": "2026mastercraftnxt23-ourprice144995",
-      "title": "2026\nMasterCraft \nNXT23",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tNXT23",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-NXT23-Canandaigua-17708687?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $144,995",
       "savings": "Savings\n                   \n                    $45,587",
       "status": "Available",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/75/ED/75ED748A-3AD1-4200-B970-3EE545EB42A7.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.402Z"
+      "fetchedAt": "2026-09-25T17:52:04.621Z"
     },
     {
       "id": "2026mastercraftx24-callfornextavailable",
-      "title": "2026\nMasterCraft \nX24",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tX24",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-X24-Canandaigua-17832432?ref=list",
       "currentPrice": "CALL FOR NEXT AVAILABLE",
       "savings": "",
       "status": "Sold",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/1E/72/1E7217EE-A0F9-41F3-AC8D-3CFC7017DB99.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.403Z"
+      "fetchedAt": "2026-09-25T17:52:04.622Z"
     },
     {
       "id": "2026mastercraftxt24-ourprice224995",
-      "title": "2026\nMasterCraft \nXT24",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tXT24",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-XT24-Canandaigua-17974794?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $224,995",
       "savings": "Savings\n                   \n                    $73,065",
-      "status": "just arrived!40",
+      "status": "Available40",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/5B/12/5B12AF51-02BF-46C5-B7C4-5C88C155FA28.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.403Z"
+      "fetchedAt": "2026-09-25T17:52:04.622Z"
     },
     {
       "id": "2026searaysundancer320-clickforaquote",
-      "title": "2026\nSea Ray \nSundancer 320",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSundancer 320",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-Sundancer-320-Canandaigua-15741748?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/17/72/17729954-4C20-4271-B76C-5C44B44DB11B.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.404Z"
+      "fetchedAt": "2026-09-25T17:52:04.623Z"
     },
     {
-      "id": "2026sportsmanheritage231-ourprice119999",
-      "title": "2026\nSportsman \nHeritage 231",
+      "id": "2026sportsmanheritage231-ourprice109712",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSportsman \n\t\t    \t\t\t\t\t\t\tHeritage 231",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Heritage-231-Conesus-17862122?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $119,999",
-      "savings": "Savings\n                   \n                    $47,803",
-      "status": "Available108",
+      "currentPrice": "Our Price   \n                    \n                        $109,712",
+      "savings": "Savings\n                   \n                    $58,090",
+      "status": "Reduced Price108",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/3C/32/3C3248C5-501C-47C3-A396-34D3373A141D.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.405Z"
+      "fetchedAt": "2026-09-25T17:52:04.624Z"
     },
     {
-      "id": "2026sportsmanheritage261-ourprice211995",
-      "title": "2026\nSportsman \nHeritage 261",
+      "id": "2026sportsmanheritage261-ourprice192815",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSportsman \n\t\t    \t\t\t\t\t\t\tHeritage 261",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Heritage-261-Canandaigua-17693912?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $211,995",
-      "savings": "Savings\n                   \n                    $73,371",
-      "status": "Available",
+      "currentPrice": "Our Price   \n                    \n                        $192,815",
+      "savings": "Savings\n                   \n                    $92,551",
+      "status": "Reduced Price",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/96/D3/96D388ED-158E-43E4-8B13-9B3DD01C9821.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.406Z"
+      "fetchedAt": "2026-09-25T17:52:04.624Z"
     },
     {
-      "id": "2026sportsmanopen282-ourprice298180",
-      "title": "2026\nSportsman \nOpen 282",
+      "id": "2026sportsmanopen282-ourprice275440",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSportsman \n\t\t    \t\t\t\t\t\t\tOpen 282",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-282-Canandaigua-18539125?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $298,180",
-      "savings": "Savings\n                   \n                    $107,685",
-      "status": "just arrived!77",
+      "currentPrice": "Our Price   \n                    \n                        $275,440",
+      "savings": "Savings\n                   \n                    $130,425",
+      "status": "Reduced Price77",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/AE/2A/AE2A0BD3-5D6C-48B4-90F5-25E54DF58B52.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.406Z"
+      "fetchedAt": "2026-09-25T17:52:04.625Z"
+    },
+    {
+      "id": "2027barlettaboatsa22uc-ourprice72995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tA22UC",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-A22UC-Conesus-19149938?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $72,995",
+      "savings": "Savings\n                   \n                    $20,117",
+      "status": "just arrived!45",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/1A/24/1A24FBFD-8B4B-4A3D-B31F-67993AA02912.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.625Z"
+    },
+    {
+      "id": "2027barlettaboatsc22uc-ourprice92495",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tC22UC",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-C22UC-Conesus-19150111?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $92,495",
+      "savings": "Savings\n                   \n                    $25,261",
+      "status": "just arrived!44",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/20/23/2023FC08-710F-4E4D-9E4A-6FCA53248A32.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.626Z"
     },
     {
       "id": "2027barlettaboatsl25uc-clickforaquote",
-      "title": "2027\nBarletta Boats \nL25UC",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tL25UC",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-L25UC-Canandaigua-18985331?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "425 HP!71",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/B2/D0/B2D0742A-00FC-48E8-A071-6781CEC59BCA.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.407Z"
+      "fetchedAt": "2026-09-25T17:52:04.626Z"
     },
     {
       "id": "2027barlettaboatss22qc-ourprice54759",
-      "title": "2027\nBarletta Boats \nS22QC",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tS22QC",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-S22QC-Canandaigua-18990334?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $54,759",
       "savings": "Savings\n                   \n                    $22,393",
       "status": "Available39",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FF/A6/FFA6155E-1A3A-405A-AB4E-F0518A339832.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.407Z"
+      "fetchedAt": "2026-09-25T17:52:04.627Z"
+    },
+    {
+      "id": "2027barlettaboatssanza22uc-ourprice58995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tSanza 22UC",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-Sanza-22UC-Canandaigua-19150145?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $58,995",
+      "savings": "Savings\n                   \n                    $23,197",
+      "status": "just arrived!33",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/F0/0E/F00EDA41-A524-42EA-B66F-02DE157D2B86.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.628Z"
     },
     {
       "id": "2027harriscruiser210sl-ourprice54995",
-      "title": "2027\nHarris \nCruiser 210 SL",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 210 SL",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Cruiser-210-SL-Canandaigua-19060156?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $54,995",
       "savings": "Savings\n                   \n                    $10,693",
       "status": "Available42",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E5/18/E5189267-12A3-4600-B7F9-3A002B3CC864.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.409Z"
+      "fetchedAt": "2026-09-25T17:52:04.628Z"
     },
     {
-      "id": "2027harriscruiser230sldh-ourprice84995",
-      "title": "2027\nHarris \nCruiser 230 SLDH",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Cruiser-230-SLDH-Canandaigua-19060193?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $84,995",
-      "savings": "Savings\n                   \n                    $21,040",
-      "status": "just arrived!44",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/11/7D/117D9247-4D25-4FAA-A900-D578166BFE41.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.409Z"
-    },
-    {
-      "id": "2027harrissunliner230sldh-clickforaquote",
-      "title": "2027\nHarris \nSunliner 230 SLDH",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Sunliner-230-SLDH-Avon-19053012?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "just arrived!41",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E3/6F/E36F164E-9FB1-4142-AD8F-8F458CF762DA.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.410Z"
-    },
-    {
-      "id": "2027searayspx210outboard-clickforaquote",
-      "title": "2027\nSea Ray \nSPX 210 Outboard",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Sea-Ray-Boat-SPX-210-Outboard-Syracuse-19047669?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "just arrived!51",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A7/6C/A76C700C-FD58-4A74-A097-04ECA7F054AD.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.411Z"
-    },
-    {
-      "id": "2026aleramarine23l-ourprice99999",
-      "title": "2026\nAlera Marine \n23L",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Alera-Marine-Boat-23L-Syracuse-18495095?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $99,999",
-      "savings": "Savings\n                   \n                    $32,778",
-      "status": "NEW MODEL!36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/C0/31/C0312C48-39B4-403A-9010-C908D1F86C76.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.411Z"
-    },
-    {
-      "id": "2026aleramarinea22q-ourprice69995",
-      "title": "2026\nAlera Marine \nA22Q",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Alera-Marine-Boat-A22Q-Syracuse-18495885?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $69,995",
-      "savings": "Savings\n                   \n                    $27,318",
-      "status": "NEW MODEL!31",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/88/C0/88C056C7-80C8-4B91-ADAA-5F4C8283680B.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.412Z"
-    },
-    {
-      "id": "2026barlettaboatsa20l-ourprice59995",
-      "title": "2026\nBarletta Boats \nA20L",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-A20L-Conesus-18015076?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $59,995",
-      "savings": "Savings\n                   \n                    $17,350",
-      "status": "Available39",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/0C/11/0C11EA9E-569A-4D48-8647-117A1B06D764.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.413Z"
-    },
-    {
-      "id": "2026barlettaboatsa22qctriple-toon-ourprice56795",
-      "title": "2026\nBarletta Boats \nA22QC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-A22QC-Triple-Toon-Canandaigua-17640294?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $56,795",
-      "savings": "Savings\n                   \n                    $22,200",
-      "status": "Available36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/BC/BF/BCBFDC3D-9ECA-4B0F-A547-CCB910CAE599.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.413Z"
-    },
-    {
-      "id": "2026barlettaboatsc22mtriple-toon-ourprice83995",
-      "title": "2026\nBarletta Boats \nC22M Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22M-Triple-Toon-Canandaigua-18320699?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $83,995",
-      "savings": "Savings\n                   \n                    $28,089",
-      "status": "Available36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A5/15/A5152DCE-BE2E-44B3-A2C3-21D802FF07C5.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.414Z"
-    },
-    {
-      "id": "2026barlettaboatsc22qctriple-toon-ourprice79995",
-      "title": "2026\nBarletta Boats \nC22QC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22QC-Triple-Toon-Canandaigua-18323429?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $79,995",
-      "savings": "Savings\n                   \n                    $22,644",
-      "status": "Available37",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/91/6C/916C1D79-827B-4A2A-917F-FFA8C904C02D.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.414Z"
-    },
-    {
-      "id": "2026barlettaboatsc22qctriple-toon-ourprice78995",
-      "title": "2026\nBarletta Boats \nC22QC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22QC-Triple-Toon-Canandaigua-18539165?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $78,995",
-      "savings": "Savings\n                   \n                    $22,469",
-      "status": "Available37",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/4F/B4/4FB42CD8-3365-42C4-9FCD-546C73AE21B3.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.416Z"
-    },
-    {
-      "id": "2026barlettaboatsc22uctriple-toon-ourprice94979",
-      "title": "2026\nBarletta Boats \nC22UC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22UC-Triple-Toon-Canandaigua-18323453?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $94,979",
-      "savings": "Savings\n                   \n                    $26,755",
-      "status": "Available40",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/0D/88/0D882CFE-F691-4536-B686-32EC0E071C28.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.416Z"
-    },
-    {
-      "id": "2026barlettaboatsc22uctriple-toon-ourprice86795",
-      "title": "2026\nBarletta Boats \nC22UC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22UC-Triple-Toon-Conesus-18421561?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $86,795",
-      "savings": "Savings\n                   \n                    $24,864",
-      "status": "Sale Pending56",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/41/DA/41DA9C64-9373-47C6-A192-43C491FF9D9F.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.417Z"
-    },
-    {
-      "id": "2026barlettaboatsl23uctriple-toon-clickforaquote",
-      "title": "2026\nBarletta Boats \nL23UC Triple-Toon",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-L23UC-Triple-Toon-Conesus-18323368?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Available36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/4C/7A/4C7ADCC6-753C-413D-B810-58D6D2D0E092.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.418Z"
-    },
-    {
-      "id": "2026baylinerd20i-ourprice65905",
-      "title": "2026\nBayliner \nD20i",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-D20i-Canandaigua-17972797?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $65,905",
-      "savings": "",
-      "status": "just arrived!59",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/24/95/24957F2A-2801-4EAA-92D7-948F127650FC.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.418Z"
-    },
-    {
-      "id": "2026baylinerd22i-ourprice78945",
-      "title": "2026\nBayliner \nD22i",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-D22i-Conesus-17972789?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $78,945",
-      "savings": "Savings\n                   \n                    $4,290",
-      "status": "Available36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/36/EA/36EA9025-4C96-4607-BB5C-C5521896FCB1.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.419Z"
-    },
-    {
-      "id": "2026baylinerv20i-ourprice56995",
-      "title": "2026\nBayliner \nV20I",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-V20I-Canandaigua-18322907?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $56,995",
-      "savings": "Savings\n                   \n                    $810",
-      "status": "Available28",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/81/AF/81AF00A9-AA05-4D62-9E30-F423AE3BEAF1.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.420Z"
-    },
-    {
-      "id": "2026harriscruiser190sl-ourprice39995",
-      "title": "2026\nHarris \nCruiser 190 SL",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-190-SL-Conesus-18539224?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $39,995",
-      "savings": "Savings\n                   \n                    $10,380",
-      "status": "just arrived!32",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/20/99/20992EF2-28E8-443B-9E83-6FF795FA0257.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.420Z"
-    },
-    {
-      "id": "2026harriscruiser190sl-ourprice44995",
-      "title": "2026\nHarris \nCruiser 190 SL",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-190-SL-Canandaigua-19060179?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $44,995",
-      "savings": "Savings\n                   \n                    $10,402",
-      "status": "just arrived!36",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/04/BC/04BCCB56-AFAD-41DB-A743-30940D31301F.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.421Z"
-    },
-    {
-      "id": "2026harriscruiser210cwdh-ourprice39995",
-      "title": "2026\nHarris \nCruiser 210 CWDH",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-210-CWDH-Canandaigua-18539234?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $39,995",
-      "savings": "Savings\n                   \n                    $11,607",
-      "status": "Available39",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/BD/57/BD57F93C-FCE4-4D94-89C9-1A264E2F6397.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.422Z"
-    },
-    {
-      "id": "2026harriscruiser210cwdh-ourprice66995",
-      "title": "2026\nHarris \nCruiser 210 CWDH",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-210-CWDH-Canandaigua-18539257?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $66,995",
-      "savings": "Savings\n                   \n                    $15,929",
-      "status": "Available47",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/C0/66/C06620C8-4A82-42D8-BBE3-676FC2317CBB.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.422Z"
-    },
-    {
-      "id": "2026harriscruiser210sl-ourprice69995",
-      "title": "2026\nHarris \nCruiser 210 SL",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-210-SL-Conesus-18990360?ref=list",
+      "id": "2027harriscruiser210sl-ourprice69995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 210 SL",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Cruiser-210-SL-Conesus-18990360?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $69,995",
       "savings": "Savings\n                   \n                    $18,548",
-      "status": "Available50",
+      "status": "Sale Pending50",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/D6/2E/D62E35C6-F9F0-40D5-9C82-8CD2EF3911F7.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.423Z"
-    },
-    {
-      "id": "2026harriscruiser230cwdh-ourprice79995",
-      "title": "2026\nHarris \nCruiser 230 CWDH",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-230-CWDH-Conesus-18539272?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $79,995",
-      "savings": "Savings\n                   \n                    $17,259",
-      "status": "Available44",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/07/AA/07AABD3D-E3E1-4177-9D1C-C0989FCFF651.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.424Z"
-    },
-    {
-      "id": "2026harriscruiser230sl-ourprice48495",
-      "title": "2026\nHarris \nCruiser 230 SL",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-230-SL-Conesus-17601661?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $48,495",
-      "savings": "Savings\n                   \n                    $13,807",
-      "status": "Available33",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/40/1E/401E4421-FE7D-4422-8517-617DEEEFAB08.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.425Z"
-    },
-    {
-      "id": "2026harrissunliner230sle-ourprice89999",
-      "title": "2026\nHarris \nSunliner 230 SLE",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Sunliner-230-SLE-Canandaigua-17974689?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $89,999",
-      "savings": "Savings\n                   \n                    $21,088",
-      "status": "Available44",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/54/8B/548B395A-3170-4936-B7B9-953827EA0FEF.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.425Z"
-    },
-    {
-      "id": "2026searaysdx230-clickforaquote",
-      "title": "2026\nSea Ray \nSDX 230",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-230-Syracuse-18285474?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Available37",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/18/1D/181D86D9-99F1-4651-B56A-E7E5AD8EFC56.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.426Z"
-    },
-    {
-      "id": "2026searaysdx250-clickforaquote",
-      "title": "2026\nSea Ray \nSDX 250",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-250-Syracuse-18285508?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "just arrived!43",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FF/CC/FFCC32F3-F4A1-4FEC-B2D4-090EB438E130.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.427Z"
-    },
-    {
-      "id": "2026searaysdx250outboard-clickforaquote",
-      "title": "2026\nSea Ray \nSDX 250 Outboard",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-250-Outboard-Canandaigua-17708111?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Reduced Price48",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/86/35/8635B82C-6459-408D-AA77-6065B5D46A46.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.427Z"
-    },
-    {
-      "id": "2026searaysdx270-clickforaquote",
-      "title": "2026\nSea Ray \nSDX 270",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-270-Syracuse-18285522?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Available34",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/92/AE/92AE63F7-51F6-4AF6-8B0B-ABB68B16F703.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.428Z"
-    },
-    {
-      "id": "2026searaysdx290-clickforaquote",
-      "title": "2026\nSea Ray \nSDX 290",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-290-Canandaigua-17974811?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "just arrived!42",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FA/7E/FA7EB9D6-3149-4701-B565-91463A1866B2.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.429Z"
-    },
-    {
-      "id": "2026searayslx260-clickforaquote",
-      "title": "2026\nSea Ray \nSLX 260",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-260-Canandaigua-18276205?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "just arrived!59",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/12/D8/12D827C2-F3F6-473E-9967-E45E869B0F26.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.429Z"
-    },
-    {
-      "id": "2026searayspx210-ourprice74995",
-      "title": "2026\nSea Ray \nSPX 210",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Canandaigua-18285551?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $74,995",
-      "savings": "Savings\n                   \n                    $7,660",
-      "status": "Available51",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/ED/F4/EDF4B528-038F-486E-9EF0-7073D41C84D2.jpg",
-      "fetchedAt": "2026-08-14T14:17:02.430Z"
-    },
-    {
-      "id": "2026searayspx210-ourprice89999",
-      "title": "2026\nSea Ray \nSPX 210",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Conesus-18436164?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $89,999",
-      "savings": "Savings\n                   \n                    $9,556",
-      "status": "Available54",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/30/FC/30FC7FE5-047B-4890-A6E1-26EEDBDEBFCB.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.603Z"
-    },
-    {
-      "id": "2026searayspx210-clickforaquote",
-      "title": "2026\nSea Ray \nSPX 210",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Canandaigua-17974801?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Available58",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/27/C1/27C155F7-37B9-4470-ACE0-058064A0A876.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.610Z"
+      "fetchedAt": "2026-09-25T17:52:04.628Z"
     },
     {
       "id": "2027harriscruiser210sldh-ourprice69995",
-      "title": "2027\nHarris \nCruiser 210 SLDH",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 210 SLDH",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Cruiser-210-SLDH-Canandaigua-19062627?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $69,995",
       "savings": "Savings\n                   \n                    $2,633",
       "status": "Available34",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A7/FA/A7FA6483-D572-48BC-9B34-492DD702A5D5.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.611Z"
+      "fetchedAt": "2026-09-25T17:52:04.629Z"
+    },
+    {
+      "id": "2027harriscruiser230sldh-ourprice84995",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 230 SLDH",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Cruiser-230-SLDH-Canandaigua-19060193?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $84,995",
+      "savings": "Savings\n                   \n                    $21,040",
+      "status": "just arrived!44",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/11/7D/117D9247-4D25-4FAA-A900-D578166BFE41.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.630Z"
+    },
+    {
+      "id": "2027harrissunliner230sldh-clickforaquote",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tSunliner 230 SLDH",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Sunliner-230-SLDH-Avon-19053012?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "just arrived!41",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E3/6F/E36F164E-9FB1-4142-AD8F-8F458CF762DA.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.630Z"
+    },
+    {
+      "id": "2027searayspx210outboard-clickforaquote",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSPX 210 Outboard",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Sea-Ray-Boat-SPX-210-Outboard-Syracuse-19047669?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "just arrived!51",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A7/6C/A76C700C-FD58-4A74-A097-04ECA7F054AD.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.631Z"
+    },
+    {
+      "id": "2026aleramarine23l-ourprice99999",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tAlera Marine \n\t\t    \t\t\t\t\t\t\t23L",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Alera-Marine-Boat-23L-Syracuse-18495095?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $99,999",
+      "savings": "Savings\n                   \n                    $32,778",
+      "status": "NEW MODEL!36",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/C0/31/C0312C48-39B4-403A-9010-C908D1F86C76.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.631Z"
+    },
+    {
+      "id": "2026barlettaboatsc22mtriple-toon-ourprice83995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tC22M Triple-Toon",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Barletta-Boats-Boat-C22M-Triple-Toon-Canandaigua-18320699?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $83,995",
+      "savings": "Savings\n                   \n                    $28,089",
+      "status": "Available36",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A5/15/A5152DCE-BE2E-44B3-A2C3-21D802FF07C5.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.632Z"
+    },
+    {
+      "id": "2026baylinerd20i-ourprice65905",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tBayliner \n\t\t    \t\t\t\t\t\t\tD20i",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-D20i-Canandaigua-17972797?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $65,905",
+      "savings": "",
+      "status": "Available59",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/24/95/24957F2A-2801-4EAA-92D7-948F127650FC.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.632Z"
+    },
+    {
+      "id": "2026baylinerd22i-ourprice78945",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tBayliner \n\t\t    \t\t\t\t\t\t\tD22i",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-D22i-Conesus-17972789?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $78,945",
+      "savings": "Savings\n                   \n                    $4,290",
+      "status": "Available36",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/36/EA/36EA9025-4C96-4607-BB5C-C5521896FCB1.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.633Z"
+    },
+    {
+      "id": "2026baylinerv20i-ourprice56995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tBayliner \n\t\t    \t\t\t\t\t\t\tV20I",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-V20I-Canandaigua-18322907?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $56,995",
+      "savings": "Savings\n                   \n                    $810",
+      "status": "Available28",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/81/AF/81AF00A9-AA05-4D62-9E30-F423AE3BEAF1.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.633Z"
+    },
+    {
+      "id": "2026harriscruiser190sl-ourprice39995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 190 SL",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-190-SL-Conesus-18539224?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $39,995",
+      "savings": "Savings\n                   \n                    $10,380",
+      "status": "Available32",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/20/99/20992EF2-28E8-443B-9E83-6FF795FA0257.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.634Z"
+    },
+    {
+      "id": "2026harriscruiser190sl-ourprice44995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 190 SL",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-190-SL-Canandaigua-19060179?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $44,995",
+      "savings": "Savings\n                   \n                    $10,402",
+      "status": "Available36",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/04/BC/04BCCB56-AFAD-41DB-A743-30940D31301F.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.634Z"
+    },
+    {
+      "id": "2026harriscruiser210cwdh-ourprice39995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 210 CWDH",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-210-CWDH-Canandaigua-18539234?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $39,995",
+      "savings": "Savings\n                   \n                    $11,607",
+      "status": "Available39",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/BD/57/BD57F93C-FCE4-4D94-89C9-1A264E2F6397.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.635Z"
+    },
+    {
+      "id": "2026harriscruiser210cwdh-ourprice66995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 210 CWDH",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-210-CWDH-Canandaigua-18539257?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $66,995",
+      "savings": "Savings\n                   \n                    $15,929",
+      "status": "Available47",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/C0/66/C06620C8-4A82-42D8-BBE3-676FC2317CBB.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.635Z"
+    },
+    {
+      "id": "2026harriscruiser230cwdh-ourprice79995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 230 CWDH",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-230-CWDH-Conesus-18539272?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $79,995",
+      "savings": "Savings\n                   \n                    $17,259",
+      "status": "Available44",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/07/AA/07AABD3D-E3E1-4177-9D1C-C0989FCFF651.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.636Z"
+    },
+    {
+      "id": "2026harriscruiser230sl-ourprice48495",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 230 SL",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Cruiser-230-SL-Conesus-17601661?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $48,495",
+      "savings": "Savings\n                   \n                    $13,807",
+      "status": "Available33",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/40/1E/401E4421-FE7D-4422-8517-617DEEEFAB08.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.636Z"
+    },
+    {
+      "id": "2026harrissunliner230sle-ourprice89999",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tSunliner 230 SLE",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Harris-Boat-Sunliner-230-SLE-Canandaigua-17974689?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $89,999",
+      "savings": "Savings\n                   \n                    $21,088",
+      "status": "Available44",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/54/8B/548B395A-3170-4936-B7B9-953827EA0FEF.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.637Z"
+    },
+    {
+      "id": "2026searaysdx230-clickforaquote",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 230",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-230-Syracuse-18285474?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "Available37",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/18/1D/181D86D9-99F1-4651-B56A-E7E5AD8EFC56.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.637Z"
+    },
+    {
+      "id": "2026searaysdx230-ourprice139999",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 230",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-230-Canandaigua-18285491?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $139,999",
+      "savings": "Savings\n                   \n                    $22,405",
+      "status": "Available54",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/F9/AB/F9AB5B06-CFA8-4B9C-8C36-2CB8D537C436.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.638Z"
+    },
+    {
+      "id": "2026searaysdx250-clickforaquote",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 250",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-250-Syracuse-18285508?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "Available43",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FF/CC/FFCC32F3-F4A1-4FEC-B2D4-090EB438E130.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.638Z"
+    },
+    {
+      "id": "2026searaysdx250outboard-ourprice159995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 250 Outboard",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-250-Outboard-Canandaigua-17708111?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $159,995",
+      "savings": "Savings\n                   \n                    $38,743",
+      "status": "Reduced Price48",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/86/35/8635B82C-6459-408D-AA77-6065B5D46A46.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.639Z"
+    },
+    {
+      "id": "2026searaysdx270-ourprice189995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 270",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-270-Syracuse-18285522?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $189,995",
+      "savings": "Savings\n                   \n                    $60,630",
+      "status": "Reduced Price34",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/92/AE/92AE63F7-51F6-4AF6-8B0B-ABB68B16F703.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.639Z"
+    },
+    {
+      "id": "2026searaysdx290-ourprice189999",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSDX 290",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SDX-290-Canandaigua-17974811?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $189,999",
+      "savings": "Savings\n                   \n                    $46,856",
+      "status": "Reduced Price42",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FA/7E/FA7EB9D6-3149-4701-B565-91463A1866B2.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.639Z"
+    },
+    {
+      "id": "2026searayslx260-ourprice189795",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSLX 260",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-260-Canandaigua-18276205?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $189,795",
+      "savings": "Savings\n                   \n                    $42,960",
+      "status": "Available59",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/12/D8/12D827C2-F3F6-473E-9967-E45E869B0F26.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.640Z"
+    },
+    {
+      "id": "2026searayspx210-ourprice89999",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSPX 210",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Conesus-18436164?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $89,999",
+      "savings": "Savings\n                   \n                    $9,556",
+      "status": "Available54",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/30/FC/30FC7FE5-047B-4890-A6E1-26EEDBDEBFCB.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.640Z"
+    },
+    {
+      "id": "2026searayspx210-ourprice74995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSPX 210",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Canandaigua-18285551?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $74,995",
+      "savings": "Savings\n                   \n                    $7,660",
+      "status": "Available51",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/ED/F4/EDF4B528-038F-486E-9EF0-7073D41C84D2.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.641Z"
+    },
+    {
+      "id": "2026searayspx210-ourprice76995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSPX 210",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SPX-210-Canandaigua-17974801?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $76,995",
+      "savings": "Savings\n                   \n                    $8,460",
+      "status": "Available58",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/27/C1/27C155F7-37B9-4470-ACE0-058064A0A876.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.641Z"
+    },
+    {
+      "id": "2027barlettaboatsc22u-clickforaquote",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tC22U",
+      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Barletta-Boats-Boat-C22U-Canandaigua-19237830?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "just arrived!58",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/ED/DD/EDDDE451-8F93-4FE2-8794-2342C9AD6888.jpg",
+      "fetchedAt": "2026-09-25T17:52:04.641Z"
     },
     {
       "id": "2027harrissunliner230sl-clickforaquote",
-      "title": "2027\nHarris \nSunliner 230 SL",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tSunliner 230 SL",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-Harris-Boat-Sunliner-230-SL-Conesus-17974626?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
-      "status": "INCOMING",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/4E/07/4E071173-3C96-40AB-95B8-4C70C1D625D2.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.611Z"
+      "status": "Available52",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/F1/60/F16079D1-C631-4A74-ACDA-03F65C1060D8.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.822Z"
     },
     {
-      "id": "2026baylinert18-startingat31995",
-      "title": "2026\nBayliner \nT18",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T18-Avon-17975343?ref=list",
-      "currentPrice": "Starting at $31,995",
+      "id": "2026barlettaboatsa24qctriple-toon-ourprice54995",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tA24QC Triple-Toon",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2026-Barletta-Boats-Boat-A24QC-Triple-Toon-Syracuse-19163084?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $54,995",
       "savings": "",
-      "status": "order available6",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/5B/80/5B80EE44-3EB3-493A-ACD6-1A0287BE100F.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.612Z"
-    },
-    {
-      "id": "2026baylinert20cc-startingat45100",
-      "title": "2026\nBayliner \nT20CC",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T20CC-Avon-17975348?ref=list",
-      "currentPrice": "Starting at $45,100",
-      "savings": "",
-      "status": "order available2",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/83/73/8373F0C1-6462-4B55-BCFC-AEE517532F5F.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.612Z"
-    },
-    {
-      "id": "2026baylinert22cc-startingat54810",
-      "title": "2026\nBayliner \nT22CC",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T22CC-Avon-17975351?ref=list",
-      "currentPrice": "Starting at $54,810",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/26588481-0-150050501.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.613Z"
-    },
-    {
-      "id": "2026baylinert23explorer-startingat99177",
-      "title": "2026\nBayliner \nT23 Explorer",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T23-Explorer-Avon-17975556?ref=list",
-      "currentPrice": "Starting at $99,177",
-      "savings": "",
-      "status": "order available1",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A1/28/A1286EC8-C6AD-434B-AC8F-3C18C12E0AB2.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.613Z"
-    },
-    {
-      "id": "2026baylinert23pilothouse-startingat103687",
-      "title": "2026\nBayliner \nT23 Pilothouse",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T23-Pilothouse-Avon-17975451?ref=list",
-      "currentPrice": "Starting at $103,687",
-      "savings": "",
-      "status": "order available9",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/57/90/57905157-7CF0-441A-98CD-2DE39DA0F7C4.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.614Z"
-    },
-    {
-      "id": "2026baylinert24cc-startingat66915",
-      "title": "2026\nBayliner \nT24CC",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T24CC-Avon-17975369?ref=list",
-      "currentPrice": "Starting at $66,915",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/16/66/1666D6F7-7921-4758-9CD0-68BF68981C55.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.615Z"
-    },
-    {
-      "id": "2026baylinert25explorer-startingat133623",
-      "title": "2026\nBayliner \nT25 Explorer",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T25-Explorer-Avon-17975575?ref=list",
-      "currentPrice": "Starting at $133,623",
-      "savings": "",
-      "status": "order available1",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/85/F2/85F207DA-C055-4ED7-B1D1-F361AFAB43E4.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.615Z"
-    },
-    {
-      "id": "2026baylinert25pilothouse-startingat139924",
-      "title": "2026\nBayliner \nT25 Pilothouse",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T25-Pilothouse-Avon-17975550?ref=list",
-      "currentPrice": "Starting at 139,924",
-      "savings": "",
-      "status": "order available2",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/33/7D/337D7D21-5EC1-4E79-8A69-4B7A7ED5529E.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.616Z"
-    },
-    {
-      "id": "2026baylinert29explorer-startingat232053",
-      "title": "2026\nBayliner \nT29 Explorer",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Bayliner-Boat-T29-Explorer-Avon-17975578?ref=list",
-      "currentPrice": "Starting at $232,053",
-      "savings": "",
-      "status": "order available3",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/DA/FD/DAFDA546-94C8-4F1E-8A0B-5DAC24EC5C7C.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.616Z"
-    },
-    {
-      "id": "2026chriscraftcalypso28-startingat338490",
-      "title": "2026\nChris Craft \nCalypso 28",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Calypso-28-Avon-17977048?ref=list",
-      "currentPrice": "Starting at $338,490",
-      "savings": "",
-      "status": "order available10",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/05/F3/05F337AA-8F05-443D-AD4E-57E61DB23C2C.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.617Z"
-    },
-    {
-      "id": "2026chriscraftcalypso32-startingat633480",
-      "title": "2026\nChris Craft \nCalypso 32",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Calypso-32-Avon-17977053?ref=list",
-      "currentPrice": "Starting at $633,480",
-      "savings": "",
-      "status": "order available9",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E1/A0/E1A09602-CC6F-4896-98A8-D48068B57421.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.617Z"
-    },
-    {
-      "id": "2026chriscraftcalypso35-startingat783220",
-      "title": "2026\nChris Craft \nCalypso 35",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Calypso-35-Avon-17977056?ref=list",
-      "currentPrice": "Starting at $783,220",
-      "savings": "",
-      "status": "order available11",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/C3/D3/C3D3DA54-6627-4EBE-81B3-E9B8E992CE77.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.618Z"
-    },
-    {
-      "id": "2026chriscraftcatalina28-startingat346690",
-      "title": "2026\nChris Craft \nCatalina 28",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Catalina-28-Avon-17977060?ref=list",
-      "currentPrice": "Starting at $346,690",
-      "savings": "",
-      "status": "order available9",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/B4/7E/B47E0C24-CBBB-4584-A6F8-9B9CFC80FF73.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.618Z"
-    },
-    {
-      "id": "2026chriscraftcatalina31-startingat489410",
-      "title": "2026\nChris Craft \nCatalina 31",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Catalina-31-Avon-17977063?ref=list",
-      "currentPrice": "Starting at $489,410",
-      "savings": "",
-      "status": "order available9",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/33/4A/334AC089-8C01-4D17-B6F7-E212C3941E43.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.619Z"
-    },
-    {
-      "id": "2026chriscraftlaunch31gt-startingat484070",
-      "title": "2026\nChris Craft \nLaunch 31 GT",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Launch-31-GT-Avon-17977042?ref=list",
-      "currentPrice": "Starting at $484,070",
-      "savings": "",
-      "status": "order available9",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/53/9B/539B2F1D-0DCB-4702-95BE-9EFFF9958257.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.620Z"
-    },
-    {
-      "id": "2026chriscraftlaunch35gt-startingat595440",
-      "title": "2026\nChris Craft \nLaunch 35 GT",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Chris-Craft-Boat-Launch-35-GT-Avon-17977043?ref=list",
-      "currentPrice": "Starting at $595,440",
-      "savings": "",
-      "status": "order available8",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/F2/03/F203B2A6-A122-4C1C-9874-04CA41EA90B0.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.620Z"
-    },
-    {
-      "id": "2026mastercraftnxt24-clickforaquote",
-      "title": "2026\nMasterCraft \nNXT24",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-NXT24-Avon-17975278?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "order available6",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/76/62/7662199B-62C2-4B15-8801-ADF227BBB6E9.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.621Z"
-    },
-    {
-      "id": "2026mastercraftprostar-clickforaquote",
-      "title": "2026\nMasterCraft \nProStar",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-ProStar-Avon-17975332?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "order available5",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/EF/38/EF3854A9-335D-4C57-9B39-DEE8E961E235.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.622Z"
-    },
-    {
-      "id": "2026mastercraftxstar23-clickforaquote",
-      "title": "2026\nMasterCraft \nXStar 23",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-MasterCraft-Boat-XStar-23-Avon-17975317?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "order available7",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/AF/AB/AFAB923D-7F84-44A0-A4FC-462DAA2E1451.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.622Z"
-    },
-    {
-      "id": "2026searayslx280-startingat208300",
-      "title": "2026\nSea Ray \nSLX 280",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-280-Avon-17976921?ref=list",
-      "currentPrice": "Starting at $208,300",
-      "savings": "",
-      "status": "order available20",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/67/B5/67B5006D-1802-46C7-93FE-FB37F96B80BA.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.623Z"
-    },
-    {
-      "id": "2026searayslx310-startingat371900",
-      "title": "2026\nSea Ray \nSLX 310",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-310-Avon-17977004?ref=list",
-      "currentPrice": "Starting at $371,900",
-      "savings": "",
-      "status": "order available10",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/41/7E/417E6828-177E-40FD-8B75-457DB4F50A77.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.623Z"
-    },
-    {
-      "id": "2026searayslx350-startingat427100",
-      "title": "2026\nSea Ray \nSLX 350",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-350-Avon-17977011?ref=list",
-      "currentPrice": "Starting at $427,100",
-      "savings": "",
-      "status": "order available18",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/B4/6A/B46A7936-5C10-4A0A-915A-66FB5E4CAFD6.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.624Z"
-    },
-    {
-      "id": "2026searayslx360ob-clickforaquote",
-      "title": "2026\nSea Ray \nSLX 360 OB",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-360-OB-Conesus-18182656?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "order available1",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/2A/6D/2A6D500F-121A-4E8B-98E5-17D43A48B400.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.624Z"
-    },
-    {
-      "id": "2026searayslx400-startingat832600",
-      "title": "2026\nSea Ray \nSLX 400",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-SLX-400-Avon-17977014?ref=list",
-      "currentPrice": "Starting at $832,600",
-      "savings": "",
-      "status": "order available13",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/DE/A9/DEA9809C-E635-415E-8340-9A4E8438868A.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.625Z"
-    },
-    {
-      "id": "2026searaysundancer370-startingat859900",
-      "title": "2026\nSea Ray \nSundancer 370",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sea-Ray-Boat-Sundancer-370-Canandaigua-15741778?ref=list",
-      "currentPrice": "Starting at $859,900",
-      "savings": "",
-      "status": "order available15",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/CC/9B/CC9B409A-8E02-43F7-BE3A-A2FC28AAB481.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.625Z"
-    },
-    {
-      "id": "2026sportsmanheritage321-startingat366535",
-      "title": "2026\nSportsman \nHeritage 321",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Heritage-321-Canandaigua-17693906?ref=list",
-      "currentPrice": "Starting at $366,535",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25749241-0-146539911.png",
-      "fetchedAt": "2026-08-14T14:17:04.626Z"
-    },
-    {
-      "id": "2026sportsmanmasters247-startingat109190",
-      "title": "2026\nSportsman \nMasters 247",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Masters-247-Canandaigua-17693960?ref=list",
-      "currentPrice": "Starting at $109,190",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25753461-0-146559821.png",
-      "fetchedAt": "2026-08-14T14:17:04.626Z"
-    },
-    {
-      "id": "2026sportsmanopen212-startingat89830",
-      "title": "2026\nSportsman \nOpen 212",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-212-Conesus-17693959?ref=list",
-      "currentPrice": "Starting at $89,830",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25748461-0-146537921.png",
-      "fetchedAt": "2026-08-14T14:17:04.627Z"
-    },
-    {
-      "id": "2026sportsmanopen232-startingat100840",
-      "title": "2026\nSportsman \nOpen 232",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-232-Conesus-17693958?ref=list",
-      "currentPrice": "Starting at $100,840",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25747541-0-146533601.png",
-      "fetchedAt": "2026-08-14T14:17:04.627Z"
-    },
-    {
-      "id": "2026sportsmanopen232-clickforaquote",
-      "title": "2026\nSportsman \nOpen 232",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-232-Avon-18539100?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "INCOMING",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25747541-0-146533601.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.628Z"
-    },
-    {
-      "id": "2026sportsmanopen262-startingat180425",
-      "title": "2026\nSportsman \nOpen 262",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-262-Conesus-17693956?ref=list",
-      "currentPrice": "Starting at $180,425",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25745901-0-146527751.png",
-      "fetchedAt": "2026-08-14T14:17:04.628Z"
-    },
-    {
-      "id": "2026sportsmanopen302-startingat306090",
-      "title": "2026\nSportsman \nOpen 302",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-302-Canandaigua-17693947?ref=list",
-      "currentPrice": "Starting at $306,090",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25737001-0-146507711.png",
-      "fetchedAt": "2026-08-14T14:17:04.629Z"
-    },
-    {
-      "id": "2026sportsmanopen322-startingat360425",
-      "title": "2026\nSportsman \nOpen 322",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-322-Canandaigua-17693932?ref=list",
-      "currentPrice": "Starting at $360,425",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25736101-0-146497381.png",
-      "fetchedAt": "2026-08-14T14:17:04.629Z"
-    },
-    {
-      "id": "2026sportsmanopen352-startingat485465",
-      "title": "2026\nSportsman \nOpen 352",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-352-Canandaigua-17693930?ref=list",
-      "currentPrice": "Starting at $485,465",
-      "savings": "",
-      "status": "order available",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/trimsdb/25735161-0-146492071.png",
-      "fetchedAt": "2026-08-14T14:17:04.630Z"
-    },
-    {
-      "id": "2026sportsmanopen402-startingat857990",
-      "title": "2026\nSportsman \nOpen 402",
-      "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Sportsman-Boat-Open-402-Canandaigua-17693920?ref=list",
-      "currentPrice": "Starting at $857,990",
-      "savings": "",
-      "status": "order available3",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/82/60/8260F2DF-8AE6-4201-B2C0-05C2EA447609.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.630Z"
+      "status": "just arrived!32",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/68/19/6819C01C-B220-4885-AA69-DD75A25D55EA.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.823Z"
     },
     {
       "id": "2026yachtclubtrailerssteelbunk2455tb-ourprice6195",
-      "title": "2026\nYacht Club Trailers \nSteel Bunk 2455TB",
+      "title": "2026\n\t\t    \t\t\t\t\t\t\tYacht Club Trailers \n\t\t    \t\t\t\t\t\t\tSteel Bunk 2455TB",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2026-Yacht-Club-Trailers-Cargo-Trailer-Steel-Bunk-2455TB-Yacht-Club-Boat-Trailers-Conesus-18370229?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $6,195",
       "savings": "",
       "status": "Available",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/89/6B/896BDB16-A082-4AFB-AD1D-153EA5396F68.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.631Z"
+      "fetchedAt": "2026-09-25T17:52:05.824Z"
     },
     {
-      "id": "2025barlettaboatsa22qc-ourprice44995",
-      "title": "2025\nBarletta Boats \nA22QC",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2025-Barletta-Boats-Boat-A22QC-Conesus-19060335?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $44,995",
-      "savings": "",
-      "status": "Sale Pending35",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/EE/3B/EE3BBE75-CB7B-4736-937E-546AAE031C99.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.631Z"
-    },
-    {
-      "id": "2024barlettaboatslussol25ue-clickforaquote",
-      "title": "2024\nBarletta Boats \nLusso L25UE",
+      "id": "2024barlettaboatslussol25ue-ourprice89999",
+      "title": "2024\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tLusso L25UE",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2024-Barletta-Boats-Boat-Lusso-L25UE-Canandaigua-18901065?ref=list",
-      "currentPrice": "Click for a Quote",
+      "currentPrice": "Our Price   \n                    \n                        $89,999",
       "savings": "",
       "status": "Available56",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/FA/B7/FAB7D105-6FB0-4200-A986-911A9302DDB3.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.632Z"
+      "fetchedAt": "2026-09-25T17:52:05.824Z"
     },
     {
-      "id": "2023fourwinnsh4-ourprice69995",
-      "title": "2023\nFour Winns \nH4",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2023-Four-Winns-Boat-H4-Canandaigua-18273705?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $69,995",
-      "savings": "Savings\n                   \n                    $7,900",
-      "status": "Reduced Price32",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/1E/E2/1EE2B022-4AE4-4428-91ED-76CEEF341CCF.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.633Z"
+      "id": "2024yamahawaverunnerfxcruiser-ourprice14799",
+      "title": "2024\n\t\t    \t\t\t\t\t\t\tYamaha Waverunner \n\t\t    \t\t\t\t\t\t\tFX Cruiser",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2024-Yamaha-Waverunner-Personal-Watercraft-FX-Cruiser-Canandaigua-19163076?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $14,799",
+      "savings": "",
+      "status": "Available23",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/65/5C/655CC5C7-AFC0-45E7-9E64-18682D09DA36.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.824Z"
     },
     {
-      "id": "2023tige24rzx-ourprice146895",
-      "title": "2023\nTige \n24RZX",
+      "id": "2023tige24rzx-ourprice139982",
+      "title": "2023\n\t\t    \t\t\t\t\t\t\tTige \n\t\t    \t\t\t\t\t\t\t24RZX",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2023-Tige-Boat-24RZX-Canandaigua-18320457?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $146,895",
-      "savings": "Savings\n                   \n                    $2,855",
+      "currentPrice": "Our Price   \n                    \n                        $139,982",
+      "savings": "Savings\n                   \n                    $9,768",
       "status": "Reduced Price48",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/CF/38/CF38EA3A-3EFE-41A8-BD15-67DC297A3183.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.633Z"
+      "fetchedAt": "2026-09-25T17:52:05.825Z"
     },
     {
-      "id": "2022barlettaboatsl25uc-ourprice79999",
-      "title": "2022\nBarletta Boats \nL25UC",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-Barletta-Boats-Boat-L25UC-Canandaigua-19024290?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $79,999",
+      "id": "2022barlettaboats25uc-ourprice73489",
+      "title": "2022\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\t25UC",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-Barletta-Boats-Boat-25UC-Conesus-19209916?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $73,489",
       "savings": "",
-      "status": "Sale Pending43",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/F9/B2/F9B28D45-F454-4C16-B1AF-E8D01F0E36F1.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.634Z"
+      "status": "Available9",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/BB/B2/BBB2AD0C-D8D5-4CB5-A9EB-D30894516A92.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.826Z"
     },
     {
-      "id": "2022mastercraftxt23-ourprice119999",
-      "title": "2022\nMasterCraft \nXT23",
+      "id": "2022mastercraftnxt22-ourprice89995",
+      "title": "2022\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tNXT22",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-MasterCraft-Boat-NXT22-Conesus-19150166?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $89,995",
+      "savings": "",
+      "status": "just arrived!15",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/EB/68/EB685985-2390-43C4-BBAF-3DA46C355A14.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.826Z"
+    },
+    {
+      "id": "2022mastercraftxt23-ourprice115269",
+      "title": "2022\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tXT23",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-MasterCraft-Boat-XT23-Avon-18365197?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $119,999",
-      "savings": "Savings\n                   \n                    $9,996",
+      "currentPrice": "Our Price   \n                    \n                        $115,269",
+      "savings": "Savings\n                   \n                    $14,726",
       "status": "Reduced Price46",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/7A/3E/7A3E1B9C-A0CA-46B9-93EF-587366EFCC70.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.634Z"
+      "fetchedAt": "2026-09-25T17:52:05.827Z"
     },
     {
-      "id": "2022sea-doofishpro170-ourprice15995",
-      "title": "2022\nSea-Doo \nFish Pro 170",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-Sea-Doo-Personal-Watercraft-Fish-Pro-170-Syracuse-18974628?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $15,995",
+      "id": "2022tahoet18-ourprice24679",
+      "title": "2022\n\t\t    \t\t\t\t\t\t\tTahoe® \n\t\t    \t\t\t\t\t\t\tT18",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2022-Tahoe-Boat-T18-Canandaigua-19178616?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $24,679",
       "savings": "",
-      "status": "Sale Pending10",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/3D/7F/3D7F09FC-0345-4179-A840-8015E4ACA383.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.635Z"
+      "status": "Available27",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/76/B6/76B6F1BA-955C-4702-980D-3185E5D797AA.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.828Z"
     },
     {
-      "id": "2021atxboats20type-s-clickforaquote",
-      "title": "2021\nATX Boats \n20 TYPE-S",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2021-ATX-Boats-Boat-20-TYPE-S-Syracuse-19101698?ref=list",
+      "id": "2021hurricanesundecksport185ob-clickforaquote",
+      "title": "2021\n\t\t    \t\t\t\t\t\t\tHurricane \n\t\t    \t\t\t\t\t\t\tSunDeck Sport 185 OB",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2021-Hurricane-Boat-SunDeck-Sport-185-OB-Canandaigua-19237844?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
-      "status": "Available12",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/A8/9C/A89C5861-8857-4FF8-985C-BA693CB3F8C1.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.635Z"
+      "status": "Available38",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/B4/EA/B4EAD2F8-7D6A-4681-8864-97A8AA6AF807.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.828Z"
     },
     {
-      "id": "2020baylinervr4bowrider-ourprice25995",
-      "title": "2020\nBayliner \nVR4 Bowrider",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2020-Bayliner-Boat-VR4-Bowrider-Conesus-18958976?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $25,995",
+      "id": "2021mastercraftx24-clickforaquote",
+      "title": "2021\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tX24",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2021-MasterCraft-Boat-X24-Canandaigua-19149419?ref=list",
+      "currentPrice": "Click for a Quote",
       "savings": "",
-      "status": "Sale Pending6",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/37/24/3724DC6D-E238-4B89-9DFA-097B6068284A.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.636Z"
+      "status": "Available55",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/8E/6F/8E6F791D-5183-496E-99D5-2ADF81F23E59.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.829Z"
     },
     {
-      "id": "2019mastercraftx24-ourprice119785",
-      "title": "2019\nMasterCraft \nX24",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2019-MasterCraft-Boat-X24-Canandaigua-17769853?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $119,785",
-      "savings": "Savings\n                   \n                    $20,210",
+      "id": "2021nautiquesuperairnautiqueg23-ourprice159999",
+      "title": "2021\n\t\t    \t\t\t\t\t\t\tNautique \n\t\t    \t\t\t\t\t\t\tSuper Air Nautique G23",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2021-Nautique-Boat-Super-Air-Nautique-G23-Canandaigua-19136123?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $159,999",
+      "savings": "",
+      "status": "Available48",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E3/5E/E35EA1A4-9A74-43CC-A3C2-A6BF608B303F.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.829Z"
+    },
+    {
+      "id": "2019barlettaboatse22uc-ourprice43995",
+      "title": "2019\n\t\t    \t\t\t\t\t\t\tBarletta Boats \n\t\t    \t\t\t\t\t\t\tE22UC",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2019-Barletta-Boats-Boat-E22UC-Conesus-19149535?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $43,995",
+      "savings": "",
+      "status": "Available40",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/96/20/96207BB1-B5A3-4DBB-9FD4-5EC953C19002.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.830Z"
+    },
+    {
+      "id": "2019mastercraftnxt20-clickforaquote",
+      "title": "2019\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tNXT20",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2019-MasterCraft-Boat-NXT20-Canandaigua-19109459?ref=list",
+      "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "Available32",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/61/D7/61D73D8E-9B21-444C-B79C-C015CD3C94E8.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.830Z"
+    },
+    {
+      "id": "2019mastercraftx24-ourprice117224",
+      "title": "2019\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tX24",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2019-MasterCraft-Boat-X24-Conesus-17769853?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $117,224",
+      "savings": "Savings\n                   \n                    $22,771",
       "status": "Reduced Price46",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/8C/75/8C75C771-32E6-44D7-A3CF-970AE2B5C25A.jpg",
-      "fetchedAt": "2026-08-14T14:17:04.636Z"
+      "fetchedAt": "2026-09-25T17:52:05.830Z"
     },
     {
       "id": "2018chriscraftlaunch27-ourprice129990",
-      "title": "2018\nChris Craft \nLaunch 27",
+      "title": "2018\n\t\t    \t\t\t\t\t\t\tChris Craft \n\t\t    \t\t\t\t\t\t\tLaunch 27",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2018-Chris-Craft-Boat-Launch-27-Canandaigua-18573744?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $129,990",
       "savings": "Savings\n                   \n                    $15,005",
       "status": "Reduced Price69",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/D5/22/D522DBD6-A771-4873-834B-A0758D224C51.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.860Z"
+      "fetchedAt": "2026-09-25T17:52:05.831Z"
     },
     {
-      "id": "2014hurricanesd2400io-clickforaquote",
-      "title": "2014\nHurricane \nSD 2400 I/O",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2014-Hurricane-Boat-SD-2400-I-O-Avon-19060207?ref=list",
+      "id": "2016premiersunsationrf230-clickforaquote",
+      "title": "2016\n\t\t    \t\t\t\t\t\t\tPremier \n\t\t    \t\t\t\t\t\t\tSunSation RF 230",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2016-Premier-Boat-SunSation-RF-230-Conesus-19109461?ref=list",
       "currentPrice": "Click for a Quote",
+      "savings": "",
+      "status": "Sale Pending26",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E6/EB/E6EB65FC-C46A-4BE4-92EB-9C88D5573D37.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.831Z"
+    },
+    {
+      "id": "2014hurricanesd2400io-ourprice34995",
+      "title": "2014\n\t\t    \t\t\t\t\t\t\tHurricane \n\t\t    \t\t\t\t\t\t\tSD 2400 I/O",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2014-Hurricane-Boat-SD-2400-I-O-Conesus-19060207?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $34,995",
       "savings": "",
       "status": "Available35",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/4B/C5/4BC5488D-5A3F-475E-A6D1-4E0919B272E4.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.861Z"
+      "fetchedAt": "2026-09-25T17:52:05.832Z"
     },
     {
       "id": "2014mastercraftx10-clickforaquote",
-      "title": "2014\nMasterCraft \nX10",
+      "title": "2014\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tX10",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2014-MasterCraft-Boat-X10-Canandaigua-18953306?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available44",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/80/52/8052ADF8-F986-4D1E-8A4E-4570D638DEBA.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.861Z"
+      "fetchedAt": "2026-09-25T17:52:05.832Z"
     },
     {
-      "id": "2014mistyharborboatsfishing2085-clickforaquote",
-      "title": "2014\nMisty Harbor Boats \nFishing 2085",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2014-Misty-Harbor-Boats-Boat-Fishing-2085-Canandaigua-19060437?ref=list",
+      "id": "2013harriscruiser200-clickforaquote",
+      "title": "2013\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 200",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2013-Harris-Boat-Cruiser-200-Conesus-19233147?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
-      "status": "Available28",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/CA/DE/CADE84FA-FBA2-4CC2-9BCA-3C7DD6CFB02E.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.862Z"
+      "status": "Available4",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/49/C7/49C70418-B87D-4292-92A0-6B7EA05476BD.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.833Z"
     },
     {
-      "id": "2012harriscruiser240-clickforaquote",
-      "title": "2012\nHarris \nCruiser 240",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2012-Harris-Boat-Cruiser-240-Canandaigua-19060441?ref=list",
-      "currentPrice": "Click for a Quote",
+      "id": "2012harriscruiser240-ourprice19900",
+      "title": "2012\n\t\t    \t\t\t\t\t\t\tHarris \n\t\t    \t\t\t\t\t\t\tCruiser 240",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2012-Harris-Boat-Cruiser-240-Syracuse-19060441?ref=list",
+      "currentPrice": "Our Price   \n                    \n                        $19,900",
       "savings": "",
       "status": "Available29",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/99/37/99375CD2-DFEB-463A-898E-B4AC0B5D959C.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.862Z"
+      "fetchedAt": "2026-09-25T17:52:05.833Z"
     },
     {
-      "id": "2011stingray195lrlslx-ourprice16995",
-      "title": "2011\nStingray \n195LR/LS/LX",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2011-Stingray-Boat-195LR-LS-LX-Syracuse-19060443?ref=list",
-      "currentPrice": "Our Price   \n                    \n                        $16,995",
+      "id": "2012searaysundeck220-clickforaquote",
+      "title": "2012\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSundeck 220",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2012-Sea-Ray-Boat-Sundeck-220-Canandaigua-19237857?ref=list",
+      "currentPrice": "Click for a Quote",
       "savings": "",
-      "status": "Sale Pending14",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/6A/05/6A057D10-EFA0-41D3-B898-E1987696867E.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.863Z"
+      "status": "Available35",
+      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/EB/39/EB39CC3E-AA36-415C-9053-0C0BB60F2E9D.jpg",
+      "fetchedAt": "2026-09-25T17:52:05.834Z"
     },
     {
       "id": "2009suprassv24-clickforaquote",
-      "title": "2009\nSUPRA \nSSV 24",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2009-SUPRA-Boat-SSV-24-Canandaigua-19060394?ref=list",
+      "title": "2009\n\t\t    \t\t\t\t\t\t\tSupra \n\t\t    \t\t\t\t\t\t\tSSV 24",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2009-Supra-Boat-SSV-24-Canandaigua-19060394?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "Available38",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/8B/BD/8BBDA749-C428-4A04-9A03-240A3227863C.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.863Z"
+      "fetchedAt": "2026-09-25T17:52:05.834Z"
     },
     {
       "id": "2007rinker320expresscruiser-ourprice68795",
-      "title": "2007\nRinker \n320 Express Cruiser",
+      "title": "2007\n\t\t    \t\t\t\t\t\t\tRinker \n\t\t    \t\t\t\t\t\t\t320 Express Cruiser",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2007-Rinker-Boat-320-Express-Cruiser-Canandaigua-18573683?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $68,795",
       "savings": "Savings\n                   \n                    $6,205",
       "status": "Available27",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/75/36/75366525-EF22-45FE-86FA-33DEFE8228BF.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.864Z"
+      "fetchedAt": "2026-09-25T17:52:05.834Z"
     },
     {
       "id": "2007searaysundancer380-ourprice149999",
-      "title": "2007\nSea Ray \nSundancer 380",
+      "title": "2007\n\t\t    \t\t\t\t\t\t\tSea Ray \n\t\t    \t\t\t\t\t\t\tSundancer 380",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2007-Sea-Ray-Boat-Sundancer-380-Avon-18943251?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $149,999",
       "savings": "",
       "status": "Available15",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/35/6C/356CC8DE-4C8B-4C7B-A36A-B06A781EE3A3.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.865Z"
-    },
-    {
-      "id": "2004formula260sunsport-clickforaquote",
-      "title": "2004\nFormula \n260 Sun Sport",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2004-Formula-Boat-260-Sun-Sport-Canandaigua-18948150?ref=list",
-      "currentPrice": "Click for a Quote",
-      "savings": "",
-      "status": "Sale Pending28",
-      "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/57/17/5717FA97-EEE6-41ED-A9EC-489DF752F188.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.866Z"
+      "fetchedAt": "2026-09-25T17:52:05.835Z"
     },
     {
       "id": "2004weekender215-ourprice17879",
-      "title": "2004\nWeekender \n215",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2004-Weekender-Boat-215-Conesus-18365885?ref=list",
+      "title": "2004\n\t\t    \t\t\t\t\t\t\tWeekender \n\t\t    \t\t\t\t\t\t\t215",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2004-Weekender-Boat-215-Syracuse-18365885?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $17,879",
       "savings": "Savings\n                   \n                    $1,995",
       "status": "Reduced Price27",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/E2/AE/E2AEC344-7B4D-48C8-890C-2CB10AB54A6C.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.866Z"
+      "fetchedAt": "2026-09-25T17:52:05.835Z"
     },
     {
       "id": "2003rinker270fiestavee-clickforaquote",
-      "title": "2003\nRinker \n270 Fiesta Vee",
+      "title": "2003\n\t\t    \t\t\t\t\t\t\tRinker \n\t\t    \t\t\t\t\t\t\t270 Fiesta Vee",
       "link": "https://www.marksleisuretimemarine.com/USED-Inventory-2003-Rinker-Boat-270-Fiesta-Vee-Canandaigua-18844276?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "26",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/63/B0/63B0475C-9194-425B-B57A-6ED87C11EF90.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.867Z"
+      "fetchedAt": "2026-09-25T17:52:05.835Z"
     },
     {
       "id": "1999suprasantera-ourprice18900",
-      "title": "1999\nSupra \nSantera",
-      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-1999-Supra-Boat-Santera-Canandaigua-18844154?ref=list",
+      "title": "1999\n\t\t    \t\t\t\t\t\t\tSupra \n\t\t    \t\t\t\t\t\t\tSantera",
+      "link": "https://www.marksleisuretimemarine.com/USED-Inventory-1999-Supra-Boat-Santera-Syracuse-18844154?ref=list",
       "currentPrice": "Our Price   \n                    \n                        $18,900",
       "savings": "",
       "status": "Available34",
       "vehicleImageHref": "https://cdn.dealerspike.com/imglib/v1/640x480/imglib/assets/inventory/15/06/15068B6A-163B-4DEB-AE60-1E701E470C5B.jpg",
-      "fetchedAt": "2026-08-14T14:17:05.868Z"
+      "fetchedAt": "2026-09-25T17:52:05.836Z"
     },
     {
       "id": "2027mastercraftnxt22-clickforaquote",
-      "title": "2027\nMasterCraft \nNXT22",
+      "title": "2027\n\t\t    \t\t\t\t\t\t\tMasterCraft \n\t\t    \t\t\t\t\t\t\tNXT22",
       "link": "https://www.marksleisuretimemarine.com/NEW-Inventory-2027-MasterCraft-Boat-NXT22-Canandaigua-18968018?ref=list",
       "currentPrice": "Click for a Quote",
       "savings": "",
       "status": "On Order",
       "vehicleImageHref": null,
-      "fetchedAt": "2026-08-14T14:17:05.869Z"
+      "fetchedAt": "2026-09-25T17:52:05.836Z"
     }
   ]
 }
